@@ -1,16 +1,13 @@
-### Hi there 👋
+## Requirements
 
-<!--
-**Konnext/Konnext** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+| Prerequisite       | How to check  | How to install                       |
+| ------------------ | ------------- | ------------------------------------ |
+| Node.js >= 6.x.x   | `node -v`     | [nodejs.org](https://nodejs.org/)    |
 
-Here are some ideas to get you started:
+## Installation
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- Run `npm install` in the command line.
+
+## Building
+
+- `npm run dev` to run build and start local server with files watcher
