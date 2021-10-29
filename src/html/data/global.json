@@ -87,6 +87,10 @@
                     "name": "公司背景"
                 }
             }
+        },
+        "contact_us.html": {
+            "name": "快速交流"
+           
         }
     },
     "icon": {
