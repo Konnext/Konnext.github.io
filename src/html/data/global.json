@@ -5,8 +5,8 @@
     "navbar_dark": true,
     "navbar_mobile": "style-2",
     "navbar_mobile_dark": true,
-    "navbar_logo": "assets/images/logo.png",
-    "navbar_logo_white": "assets/images/logo.png",
+    "navbar_logo": "assets/images/logo1.png",
+    "navbar_logo_white": "assets/images/logo1.png",
     "navbar_logo_width": "160",
     "navbar_left_logo": "assets/images/logo-circle.svg",
     "navbar_left_logo_white": "assets/images/logo-circle-white.svg",
@@ -14,7 +14,7 @@
     "navbar_left_copyright": "© 2021 - Konnext",
     "footer": "default",
     "footer_dark": false,
-    "footer_logo": "assets/images/logo.png",
+    "footer_logo": "assets/images/logo1.png",
     "footer_logo_white": "assets/images/logo-white.svg",
     "footer_logo_width": "160",
     "footer_3_logo_width": "108",
@@ -102,7 +102,7 @@
                 "customized-voice-control.html": {
                     "name": "客制化语音控制"
                 },
-                "review-system.html": {
+                "after-sales-review.html": {
                     "name": "定期回访"
                 }
                
@@ -114,11 +114,11 @@
         "history-project.html": {
             "name": "成功案例",
             "sub": {
-                "integrated-smart-home-system.html": {
-                    "name": "集成化智能家居"
+                "commercial-project.html": {
+                    "name": "商业项目"
                 },
-                "other-independent-system.html": {
-                    "name": "其他独立系统"
+                "residential-project.html": {
+                    "name": "住宅项目"
                 }
             }
         } ,

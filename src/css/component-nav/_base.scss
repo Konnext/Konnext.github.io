@@ -44,18 +44,18 @@
         position: relative;
 
         // line
-        &::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            right: -2px;
-            left: -2px;
-            border-bottom: 1px solid currentColor;
-            will-change: transform;
-            transition: transform .25s ease-in-out;
-            transform: scaleX(0);
-            transform-origin: center left;
-        }
+        // &::before {
+        //     content: "";
+        //     position: absolute;
+        //     top: 50%;
+        //     right: -2px;
+        //     left: -2px;
+        //     border-bottom: 1px solid currentColor;
+        //     will-change: transform;
+        //     transition: transform .25s ease-in-out;
+        //     transform: scaleX(0);
+        //     transform-origin: center left;
+        // }
     }
 
     .active > .nav-link .nav-link-name::before,

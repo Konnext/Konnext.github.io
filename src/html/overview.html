@@ -1,4 +1,4 @@
-{% set page_title = '概览' %}
+{% set page_title = '概述' %}
 {% set navbar_dark = true %}
 {% set navbar_mobile_dark = true %}
 {% set footer_dark = true %}
@@ -25,7 +25,7 @@
     <div class="row justify-content-center text-center pt-20 pb-130 mt-10">
         <div class="col-12 col-lg-8">
             <div class="subtitle show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="150">智能家居设计</div>
-            <h1 class="h2 mb-n10 show-on-scroll" data-show-duration="500" data-show-distance="10">概述</h1>
+            <h1 class="h2 mb-n10 show-on-scroll" data-show-duration="500" data-show-distance="10">概述(包括使用协议)</h1>
         </div>
     </div>
 
@@ -48,7 +48,13 @@
           <p class="lead fw-medium">我们提供从设计到安装，再到系统维护的一条龙服务。除此之外，我们也提供客制化方案满足客户与众不同的需求和奢华享受。</p>
         </div>
     </div>
-    
+    <div class="page-navigation mt-160">
+        <span>&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288</span>
+        <!-- <a href="#" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}prev<span class="d-none d-sm-inline"> post</span></a> -->
+        <a href="smart-home-design.html" class="btn btn-clean">返回上级目录 <span class="d-none d-sm-inline"> </span></a>
+      
+        <a href="hub-protocol-knx.html" class="btn btn-clean">下一篇：<span class="d-none d-sm-inline"> 中枢控制协议KNX</span>{{ icon.arrow_right | replace(' width', ' class="icon-arrow icon-arrow-right" width') | safe }}</a>
+    </div>
     <!-- <div class="page-navigation mt-160">
         <a href="#" class="btn btn-clean">{{ icon.arrow_left | replace(' width', ' class="icon-arrow icon-arrow-left" width') | safe }}prev<span class="d-none d-sm-inline"> post</span></a>
         <a href="blog-col-1.html" class="btn btn-light btn-circle btn-xs">all</a>
