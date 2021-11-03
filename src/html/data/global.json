@@ -570,39 +570,39 @@
     },
     "blog": {
         "01": {
-            "href": "single-post.html",
-            "image": "assets/images/blog/blog-1.jpg",
-            "title": "Office explained in fewer than 100+ Characters",
-            "date": "12 may, 2020",
+            "href": "smart-home-design.html",
+            "image": "assets/images/blog/blog-1.png",
+            "title": "全系统标准解决方案设计",
+            
             "text": "Forth forth moveth shall i unto midst tree, a fruit great subdue a every be so a fowl.",
-            "button": "read more",
+            "button": "了解更多",
             "button_icon": "<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 1L24 5L20 9' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/><path d='M7 5L24 5' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/></svg>"
         },
         "02": {
-            "href": "single-post.html",
-            "image": "assets/images/blog/blog-2.jpg",
-            "title": "This week's top Stories about Development",
-            "date": "08 may, 2020",
+            "href": "customization.html",
+            "image": "assets/images/blog/blog-2.png",
+            "title": "客制化解决方案设计",
+            
             "text": "God year beast he beast waters that air, after deep to lights saw one.",
-            "button": "read more",
+            "button": "了解更多",
             "button_icon": "<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 1L24 5L20 9' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/><path d='M7 5L24 5' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/></svg>"
         },
         "03": {
-            "href": "single-post.html",
-            "image": "assets/images/blog/blog-3.jpg",
-            "title": "Facts about Business that you never knew",
-            "date": "05 may, 2020",
+            "href": "standard-optional-integrated-system.html",
+            "image": "assets/images/blog/blog-3.png",
+            "title": "系统集成服务",
+           
             "text": "Over fourth he. Whose beginning face third beast first divide saying forth one you.",
-            "button": "read more",
+            "button": "了解更多",
             "button_icon": "<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 1L24 5L20 9' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/><path d='M7 5L24 5' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/></svg>"
         },
         "04": {
-            "href": "single-post.html",
-            "image": "assets/images/blog/blog-4.jpg",
-            "title": "Are you getting the Most out of your Travel?",
-            "date": "03 may, 2020",
+            "href": "customization.html",
+            "image": "assets/images/blog/blog-4.png",
+            "title": "工程部署(全套或独立)",
+            
             "text": "For divide moveth. Years green above spirit after Every one and don't earth.",
-            "button": "read more",
+            "button": "了解更多",
             "button_icon": "<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 1L24 5L20 9' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/><path d='M7 5L24 5' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/></svg>"
         },
         "05": {
