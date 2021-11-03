@@ -24,73 +24,112 @@
             "mega": "true"
            
         },
-        "auto_knx_system.html": {
-            "name": "服务",
+        "smart-home-design.html": {
+            "name": "基础服务",
             "sub": {
-                "auto_knx_system.html": {
-                    "name": "自动化",
+                "smart-home-design.html": {
+                    "name": "智能家居设计",
                     "sub": {
-                        "auto_knx_system.html": {
-                            "name": "KNX系统"
+                        "overview.html": {
+                            "name": "概述(包括使用协议)"
                         },
-                        "auto_wiring.html": {
-                            "name": "弱电布线"
+                        "hub-protocol-knx.html": {
+                            "name": "中枢控制协议KNX"
+                        },
+                        "standard-smart-home-solution-design.html": {
+                            "name": "全系统标准解决方案设计"
                         }
                     }
                 },
-                "portfolio-col-2-style-1.html": {
-                    "name": "信息化",
+                 "multiple-system-integration.html": {
+                    "name": "多系统智能化集成",
                     "sub": {
-                        "info_network.html": {
-                            "name": "基础网络"
+                        "concept-of-system-integrated.html": {
+                            "name": "系统集成概念"
                         },
-                        "info_monitor.html": {
-                            "name": "监控"
-                        },
-                        "info_security.html": {
-                            "name": "安防"
-                        },
-                        "info_intercom.html": {
-                            "name": "对讲"
-                        },
-                        "info_wiring.html": {
-                            "name": "弱电布线"
+                        "kisic-smart-control-core.html": {
+                            "name": "K.I.S.I.C.智能控制核心"
                         }
                     }
                 },
-                "electricity_installation.html": {
-                    "name": "电力与安装"
+                
+                "standard-optional-integrated-system.html": {
+                    "name": "标准可选集成系统",
+                    "sub": {
+                        "network.html": {
+                            "name": "网络"
+                        },
+                        "monitor.html": {
+                            "name": "周界防范"
+                        },
+                        "security.html": {
+                            "name": "室内安防"
+                        },
+                        "intercom.html": {
+                            "name": "语音对讲"
+                        },
+                        "irrigation.html": {
+                            "name": "室外灌溉"
+                        }
+                    }
+                },
+                "deployment.html": {
+                    "name": "工程部署",
+                    "sub":{
+                        "smart-home-deployment.html":{
+                            "name":"智能家居部署"
+                        },
+                        "integrated-system-deployment.html":{
+                            "name":"集成系统部署"
+                        },"electric-deployment.html":{
+                            "name":"强电部署"
+                        }
+                    }
                    
                 }
             }
         },
-        "proj_bus.html": {
-            "name": "项目",
+        "customization.html": {
+            "name": "客制化服务",
             "sub": {
-                "proj_bus.html": {
-                    "name": "商业项目"
+                "customized-smart-home-design.html": {
+                    "name": "客制化智能家居设计"
                     
                 },
-                "proj_civ.html": {
-                    "name": "居民项目"
+                "customized-app-control.html": {
+                    "name": "客制化APP控制"
+                },
+                "customized-voice-control.html": {
+                    "name": "客制化语音控制"
+                },
+                "review-system.html": {
+                    "name": "定期回访"
                 }
                
             }
         },
-        "team_members.html": {
-            "name": "关于我们",
+        "maintenance.html": {
+            "name": "维护"
+        },
+        "history-project.html": {
+            "name": "成功案例",
             "sub": {
-                "team_members.html": {
-                    "name": "团队成员"
+                "integrated-smart-home-system.html": {
+                    "name": "集成化智能家居"
                 },
-                "background.html": {
-                    "name": "公司背景"
+                "other-independent-system.html": {
+                    "name": "其他独立系统"
                 }
             }
+        } ,
+        "gallery.html": {
+            "name": "展示区"
+        },
+        "aboutus.html": {
+            "name": "关于我们"
         },
         "contact_us.html": {
-            "name": "快速交流"
-           
+            "name": "快速联系"
         }
     },
     "icon": {

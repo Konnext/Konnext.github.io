@@ -26,7 +26,7 @@ function initNavbar() {
             $body.addClass( scrollClass );
         }
         if ( 'start' === type ) {
-            $body.removeClass( scrollClass );
+            $body.addClass( scrollClass );
         }
     } );
 
