@@ -37,10 +37,11 @@
                 margin-bottom: 18px;
                 font-size: em(14px);
             }
-
+//主要业务img
             @include media-breakpoint-up(sm) {
                 .card-img {
-                    width: 170px;
+                    width: 252px;
+                    height: 168px;
                     margin-right: 40px;
 
                     &::before {

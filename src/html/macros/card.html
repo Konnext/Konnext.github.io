@@ -126,13 +126,12 @@
 {% endif %}
 {% if style == 'horizontal' %}
 <a class="card card-blog card-horizontal{{ ' ' + classes if classes }}"{% if data %} {{ data }}{% endif %} href="{{ href }}">
-    <span class="card-img">
+    <span style="box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) ;"  class="card-img">
         <img src="{{ image }}" alt="">
     </span>
     <span class="card-body">
-        <span class="card-date">{{ date }}</span>
         <span class="card-title {{ title_size }}">{{ title }}</span>
-        <span class="btn btn-clean">{{ button }}{{ button_icon | safe }}</span>
+        <span class="btn btn-clean text-grey-dark">{{ button }}{{ button_icon | safe }}</span>
     </span>
 </a>
 {% endif %}
