@@ -10,7 +10,7 @@
 <div class="banner banner-dark shape-parent">
     <!-- <div class="shape align-items-end mb-n160">
         <svg class="mb-n160" data-rellax-speed="-1" width="518" height="641" viewBox="0 0 518 641" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="197.5" cy="320.5" r="320.5" fill="#ffe39d"/>
+            <circle cx="197.5" cy="320.5" r="320.5" fill="#eefcff"/>
         </svg>
     </div> -->
 <br><br><br><br>
@@ -55,7 +55,7 @@
                 <p class="lead">致力于构建次世代智能家居体验，提供扁平化的多点智能控制平台，让您的居家体验跨入下一个时代。</p>
                 <p class="lead"></p>
               
-                <a href="#" class="btn btn-dark btn-with-ball ">关于我们</a>  
+                <a href="aboutus.html" class="btn btn-dark btn-with-ball ">关于我们</a>  
             </div>
            
         </div>
@@ -119,7 +119,7 @@
 <div class="py-160 mt-n8 shape-parent bg-dark overflow-hidden">
     <div class="shape justify-content-end mt-n160">
         <svg class="mt-n160" data-rellax-speed="-1" width="415" height="641" viewBox="0 0 415 641" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="320.5" cy="320.5" r="320.5" fill="#483400"/>
+            <circle cx="320.5" cy="320.5" r="320.5" fill="#003a44"/>
         </svg>
     </div>
     <div class="container">
@@ -129,7 +129,7 @@
             </div>
             <div class="d-none d-lg-block col-1 order-lg-1"></div>
             <div class="col-lg-6 col-xl-4 align-self-center order-11 order-lg-2">
-                <h2 class="h3 mt-30 mt-lg-0 mt-xl-0 mb-0 text-white">每一处牺牲之所,</h2>
+                <h2 class="h3 mt-30 mt-lg-0 mt-xl-0 mb-0 text-white">每一处栖身之所,</h2>
                 <h2 class="h3 mt-30 mt-lg-0 mt-xl-0 mb-0 text-white">都值得我们匠心构筑。</h2>
             </div>
             <div class="d-none d-xl-block col-2 order-lg-3"></div>
@@ -333,10 +333,9 @@
                         {{ feature_global(name) }}
                     </div>
                     {% endmacro %}
+                    {{ slide_feature( 'people' ) }}
                     {{ slide_feature( 'quality' ) }}
                     {{ slide_feature( 'service' ) }}
-                    {{ slide_feature( 'people' ) }}
-                    {{ slide_feature( 'ideas' ) }}
                 </div>
             </div>
             <div class="swiper-scrollbar"></div>
@@ -344,44 +343,7 @@
     </div>
 </div>
 
-<div class="pt-130 pb-160 bg-dark shape-parent overflow-hidden lines-style-1">
-    <div class="container">
-    <h2 class="display-5 mt-n30 text-white mb-100 ">客户反馈</h2>
 
-    </div>
-    <div class="line text-white"></div>
-    <div class="line text-white"></div>
-    <div class="shape align-items-end justify-content-center">
-        <svg data-rellax-speed="1" class="mb-n160" width="641" height="641" viewBox="0 0 641 641" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="320.5" cy="320.5" r="320.5" fill="#202020"/>
-        </svg>
-    </div>
-
-    <div class="swiper swiper-reviews text-white text-center" data-swiper-slides="1" data-swiper-autoHeight="true" data-swiper-speed="600" data-swiper-grabCursor="true">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                {% macro review_slide(name="") %}
-                <div class="swiper-slide">
-                    <div class="review container-fluid">
-                        <div class="review-icon">
-                            {{ review[name].icon | safe }}
-                        </div>
-                        <div class="review-text">
-                            <p class="mb-0">{{ review[name].text }}</p>
-                        </div>
-                        <div class="review-author">{{ review[name].name }}, {{ review[name].subtitle }}</div>
-                    </div>
-                </div>
-                {% endmacro %}
-
-                {{ review_slide('brian_newton') }}
-                {{ review_slide('june_oliver') }}
-                {{ review_slide('james_hamilton') }}
-            </div>
-        </div>
-        <div class="swiper-pagination"></div>
-    </div>
-</div>
 
 <!-- <div class="container">
     <div class="pt-160">
