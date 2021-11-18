@@ -43,35 +43,37 @@
                 "featured-solution.html": {
                     "name": "1. 精选居家方案",
                     "sub": {
-                        "customized-smart-home-design.html": {
-                            "name": "企业级网络设计"
-                            
+                        "customized-smar2t-home-design.html": {
+                            "name": "a. 智能家居控制"
                         },
-                        "customized-app-control.html": {
-                            "name": "个性化场景交互"
+                        "customized-app-c3ontrol.html": {
+                            "name": "b. 高性能无线WIFI全覆盖"
                         },
-                        "customized-voice-control.html": {
-                            "name": "个性化需求开发"
+                        "customized-voice4-control.html": {
+                            "name": "c. 室内外安保服务"
                         },
-                        "after-sales-review.html": {
-                            "name": "环境监测"
+                        "after-sales-review5.html": {
+                            "name": "d. 室内外对讲"
+                        }},
+                        "after-sales-revi6edw.html": {
+                            "name": "e. APP控制与语音控制"
                         }
                 },
                 "customization.html": {
                     "name": "2. 定制化服务",
                     "sub": {
-                        "customized-smart-home-design.html": {
-                            "name": "企业级网络设计"
+                        "customized-smar7t-home-design.html": {
+                            "name": "a. 企业级网络设计"
                             
                         },
-                        "customized-app-control.html": {
-                            "name": "个性化场景交互"
+                        "customized-app8-control.html": {
+                            "name": "b. 个性化场景交互"
                         },
-                        "customized-voice-control.html": {
-                            "name": "个性化需求开发"
+                        "customized-voice9-control.html": {
+                            "name": "c. 个性化需求开发"
                         },
-                        "after-sales-review.html": {
-                            "name": "环境监测"
+                        "after-sales-rev0iew.html": {
+                            "name": "d. 环境监测"
                         }
                        
                     }
@@ -708,4 +710,6 @@
             ]
         }
     }
+
+
 }
