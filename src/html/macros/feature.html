@@ -1,8 +1,8 @@
 {% macro feature(href="", icon_frame="", icon="", title="", text="", button="", button_icon="", title_size="h4", classes="", data="") %}
-<div class="feature{% if classes %} {{ classes }}{% endif %}"{% if data %} {{ data }}{% endif %}>
+<div class=" feature{% if classes %} {{ classes }}{% endif %}"{% if data %} {{ data }}{% endif %}>
     <div class="feature-icon">{{ icon_frame | safe }}{{ icon | safe }}</div>
-    <div class="feature-body">
-        <{{ title_size }} class="feature-title">{{ title }}</{{ title_size }}>
+    <div class="feature-body text-white">
+        <{{ title_size }} class="feature-title text-white">{{ title }}</{{ title_size }}>
         <p class="feature-text">{{ text }}</p>
         {% if button %}
      
