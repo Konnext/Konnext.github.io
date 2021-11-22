@@ -35,14 +35,14 @@
             }
         },
 
-        "servi2ce.html": {
+        "service.html": {
             "name": "服务支持",
             "sub": {
                 "featured-solution.html": {
-                    "name": "1. 精选居家方案",
+                    "name": "精选居家方案",
                     "sub": {
                         "smart-home-control.html": {
-                            "name": "a. 智能家居控制",
+                            "name": "智能家居控制",
                             "sub": {
                                 "light-control.html": {
                                     "name": "灯光控制"
@@ -56,10 +56,10 @@
                             }
                         },
                         "full-wifi-coverage.html": {
-                            "name": "b. 高性能无线WIFI全覆盖"
+                            "name": "高性能无线WIFI全覆盖"
                         },
                         "security-service.html": {
-                            "name": "c. 室内外安保服务",
+                            "name": "室内外安保服务",
                             "sub": {
                                 "high-definition-outdoor-surveillance.html": {
                                     "name": "高清晰度室外监控"
@@ -69,47 +69,46 @@
                                 }
                             }
                         },
-
                         "intercom.html": {
-                            "name": "d. 室内外对讲"
+                            "name": "室内外对讲"
                         },
                         "app-and-voice-control.html": {
-                            "name": "e. APP控制与语音控制"
+                            "name": "APP控制与语音控制"
                         }
                     }
                 },
                 "customization.html": {
-                    "name": "2. 定制化服务",
+                    "name": "定制化服务",
                     "sub": {
                         "enterprise-level-network-design.html": {
-                            "name": "a. 企业级网络设计",
+                            "name": "企业级网络设计",
                             "sub": {
-                                "home-office": {
+                                "home-office.html": {
                                     "name": "居家办公"
                                 },
-                                "10-gigabit-network": {
+                                "10-gigabit-network.html": {
                                     "name": "万兆网络"
                                 }
-                            },
-                            "scene-interaction-customized.html": {
-                                "name": "b. 个性化场景交互"
-                            },
-                            "development-requirement-customized": {
-                                "name": "c. 个性化需求开发"
-                            },
-                            "real-time-environment-detction.html": {
-                                "name": "d. 环境实时监测"
                             }
+                        },
+                        "scene-interaction-customized.html": {
+                            "name": "个性化场景交互"
+                        },
+                        "development-requirement-customized.html": {
+                            "name": "个性化需求开发"
+                        },
+                        "real-time-environment-detction.html": {
+                            "name": "环境实时监测"
                         }
                     }
                 },
-                "system-implement.html": {
-                    "name": "3. 系统安装",
+                "system-deployment.html": {
+                    "name": "系统安装",
                     "sub": {
-                        "home-solution-deployment": {
+                        "home-solution-deployment.html": {
                             "name": "居家方案部署"
                         },
-                        "power-installation": {
+                        "power-installation.html": {
                             "name": "电力安装"
                         }
                     }
@@ -418,36 +417,40 @@
     "single_portfolio_images": {
         "style_1": {
             "01": [
-                "assets/images/single-portfolio/style-1-1-1920-1080.jpg",
-                "assets/images/single-portfolio/style-1-1-1920-1080.jpg"
+                "assets/images/img/豪华房子1.jpg",
+                "assets/images/img/豪华房子1.jpg"
             ],
             "02": [
-                "assets/images/single-portfolio/style-1-2-1366-1000.jpg",
-                "assets/images/single-portfolio/style-1-2-1920-1080.jpg"
+                "assets/images/img/低中高面板9图.png",
+                "assets/images/img/低中高面板9图.png"
             ],
             "03": [
-                "assets/images/single-portfolio/style-1-3-1366-1000.jpg",
-                "assets/images/single-portfolio/style-1-3-1920-1080.jpg"
+                "assets/images/img/按键面板1.jpg",
+                "assets/images/img/按键面板1.jpg"
             ],
             "04": [
-                "assets/images/single-portfolio/style-1-4-1366-1000.jpg",
-                "assets/images/single-portfolio/style-1-4-1920-1080.jpg"
+                "assets/images/img/LED灯带.jpg",
+                "assets/images/img/LED灯带.jpg"
             ],
             "05": [
-                "assets/images/single-portfolio/style-1-5-1920-1080.jpg",
-                "assets/images/single-portfolio/style-1-5-1920-1080.jpg"
+                "assets/images/img/1.3.1五个可点击图片-智能家居.jpg",
+                "assets/images/img/1.3.1五个可点击图片-智能家居.jpg"
             ],
             "06": [
-                "assets/images/single-portfolio/style-1-6-910-1080.jpg",
-                "assets/images/single-portfolio/style-1-6-1920-1080.jpg"
+                "assets/images/img/1.3.1.1.1 灯光控制.jpg",
+                "assets/images/img/1.3.1.1.1 灯光控制.jpg"
             ],
             "07": [
-                "assets/images/single-portfolio/style-1-7-910-1080.jpg",
-                "assets/images/single-portfolio/style-1-7-1920-1080.jpg"
+                "assets/images/img/office1.jpg",
+                "assets/images/img/office1.jpg"
             ],
             "08": [
-                "assets/images/single-portfolio/style-1-8-910-1080.jpg",
-                "assets/images/single-portfolio/style-1-8-1920-1080.jpg"
+                "assets/images/img/高级面板8.jpg",
+                "assets/images/img/高级面板8.jpg"
+            ],
+            "09": [
+                "assets/images/img/步道灯.jpg",
+                "assets/images/img/步道灯.jpg"
             ]
         },
         "style_2": {
@@ -649,7 +652,7 @@
     },
     "blog": {
         "01": {
-            "href": "smart-home-design.html",
+            "href": "featured-solution.html",
             "image": "assets/images/blog/blog-1.png",
             "title": "方案设计",
 
@@ -667,7 +670,7 @@
             "button_icon": "<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 1L24 5L20 9' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/><path d='M7 5L24 5' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/></svg>"
         },
         "03": {
-            "href": "standard-optional-integrated-system.html",
+            "href": "smart-home-control.html",
             "image": "assets/images/blog/blog-3.png",
             "title": "系统集成",
 
@@ -676,7 +679,7 @@
             "button_icon": "<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 1L24 5L20 9' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/><path d='M7 5L24 5' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/></svg>"
         },
         "04": {
-            "href": "customization.html",
+            "href": "system-deployment.html",
             "image": "assets/images/blog/blog-4.png",
             "title": "安装与部署",
 
