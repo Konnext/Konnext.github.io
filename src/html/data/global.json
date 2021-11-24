@@ -5,9 +5,9 @@
     "navbar_dark": true,
     "navbar_mobile": "style-2",
     "navbar_mobile_dark": true,
-    "navbar_logo": "assets/images/logo1.png",
-    "navbar_logo_white": "assets/images/logo1.png",
-    "navbar_logo_width": "160",
+    "navbar_logo": "assets/images/logo_light.png",
+    "navbar_logo_white": "assets/images/logo_light.png",
+    "navbar_logo_width": "80",
     "navbar_left_logo": "assets/images/logo-circle.svg",
     "navbar_left_logo_white": "assets/images/logo-circle-white.svg",
     "navbar_left_logo_width": "120",
@@ -16,7 +16,7 @@
     "footer_dark": false,
     "footer_logo": "assets/images/logo1.png",
     "footer_logo_white": "assets/images/logo-white.svg",
-    "footer_logo_width": "160",
+    "footer_logo_width": "80",
     "footer_3_logo_width": "108",
     "navigation": {
         "aboutus.html": {
