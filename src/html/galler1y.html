@@ -1,0 +1,187 @@
+{% set page_title = '展示区' %} {% set navbar_dark = true %} {% set
+navbar_mobile_dark = true %} {% set footer_dark = true %} {% extends
+'layouts/layout-1.html' %} {% block banner %} {% macro image_portfolio(src="",
+classes="", gallery="") %}
+<a
+    href="{{ src[1] }}"
+    class="gallery-item{{ ' ' + classes if classes }}"
+    data-fancybox="{{ gallery }}"
+    data-animation-effect="fade"
+>
+    <img src="{{ src[0] }}" alt="" />
+</a>
+{% endmacro %} {% macro image_portfolio_init(name="", classes="", gallery="") %}
+{{ image_portfolio(single_portfolio_images.style_1[name], classes=classes,
+gallery=gallery) }} {% endmacro %}
+
+<div class="banner banner-dark shape-parent">
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="shape align-items-end mb-n160">
+        <svg
+            class="mb-n160"
+            data-rellax-speed="-1"
+            width="518"
+            height="641"
+            viewBox="0 0 518 641"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <circle cx="127.5" cy="220.5" r="320.5" fill="#eefcff" />
+        </svg>
+    </div>
+</div>
+{% endblock %} {% block content %}
+
+<div class="container">
+    <div class="pt-100 mt-n30 pb-130 mb-n10">
+        <div class="row gh-1">
+            <div class="d-none d-xl-block col-1"></div>
+
+            <div
+                class="
+                    col-12 col-lg-5 col-xl-4
+                    me-lg-auto me-xl-0
+                    show-on-scroll
+                "
+                data-show-duration="500"
+                data-show-distance="10"
+            >
+                <h2 class="mb-100 mb-lg-0 pb-8 pb-lg-0">居民项目</h2>
+                <hr />
+                <p class="lead mb-0">包含已完工项目与正在进行中的项目</p>
+            </div>
+
+            <div class="d-none d-xl-block col-lg-2"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div
+            class="col-12 show-on-scroll"
+            data-show-duration="500"
+            data-show-delay="50"
+        >
+            {{ image_portfolio_init('06', 'gallery-item-sm', 'gallery-1') }}
+        </div>
+        <div
+            class="col-12 col-lg-8 order-lg-1 show-on-scroll"
+            data-show-duration="500"
+            data-show-delay="50"
+        >
+            {{ image_portfolio_init('01', 'gallery-item-md', 'gallery-2') }}
+        </div>
+        <div
+            class="col-12 col-sm-6 col-lg-4 order-lg-0 show-on-scroll"
+            data-show-duration="500"
+            data-show-delay="150"
+        >
+            {{ image_portfolio_init('02', 'gallery-item-xl', 'gallery-2') }}
+        </div>
+        <div
+            class="col-12 col-sm-6 col-lg-4 order-lg-2 show-on-scroll"
+            data-show-duration="500"
+            data-show-delay="50"
+        >
+            {{ image_portfolio_init('03', 'gallery-item-xl', 'gallery-2') }}
+        </div>
+        <div
+            class="col-12 col-sm-6 col-lg-4 order-lg-3 show-on-scroll"
+            data-show-duration="500"
+            data-show-delay="150"
+        >
+            {{ image_portfolio_init('04', 'gallery-item-xl', 'gallery-2') }}
+        </div>
+        <div
+            class="col-12 col-sm-6 col-lg-4 order-lg-4 show-on-scroll"
+            data-show-duration="500"
+            data-show-delay="250"
+        >
+            {{ image_portfolio_init('05', 'gallery-item-xl', 'gallery-2') }}
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="py-160 mt-n30 pb-130 mb-n10">
+            <div class="row gh-1">
+                <div class="d-none d-xl-block col-1"></div>
+
+                <div
+                    class="
+                        col-12 col-lg-5 col-xl-4
+                        me-lg-auto me-xl-0
+                        show-on-scroll
+                    "
+                    data-show-duration="500"
+                    data-show-distance="10"
+                >
+                    <h2 class="mb-100 mb-lg-0 pb-8 pb-lg-0">商业项目</h2>
+                    <hr />
+                    <p class="lead mb-0">包含已完工项目与正在进行中的项目</p>
+                </div>
+
+                <div class="d-none d-xl-block col-lg-2"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div
+            class="col-12 show-on-scroll"
+            data-show-duration="500"
+            data-show-delay="50"
+        >
+            {{ image_portfolio_init('07', 'gallery-item-sm', 'gallery-1') }}
+        </div>
+        <div
+            class="col-12 col-sm-6 show-on-scroll"
+            data-show-duration="500"
+            data-show-delay="50"
+        >
+            {{ image_portfolio_init('08', 'gallery-item-md', 'gallery-1') }}
+        </div>
+        <div
+            class="col-12 col-sm-6 show-on-scroll"
+            data-show-duration="500"
+            data-show-delay="200"
+        >
+            {{ image_portfolio_init('09', 'gallery-item-md', 'gallery-1') }}
+        </div>
+    </div>
+
+    <div class="page-navigation mt-160">
+        <a href="b2b-project.html" class="btn btn-clean"
+            >{{ icon.arrow_left | replace(' width', ' class="icon-arrow
+            icon-arrow-left" width') | safe }}<span class="d-none d-sm-inline"
+                >上一篇：商务合作
+            </span></a
+        >
+        <a href="index.html" class="btn btn-clean"
+            >返回<span class="d-none d-sm-inline">首页</span></a
+        >
+
+        <a href="contact_us.html" class="btn btn-clean"
+            ><span class="d-none d-sm-inline">下一篇：联系我们</span>{{
+            icon.arrow_right | replace(' width', ' class="icon-arrow
+            icon-arrow-right" width') | safe }}</a
+        >
+    </div>
+</div>
+
+<!-- <div class="container-fluid px-1">
+    <div class="row gh-1 gv-1 justify-content-center">
+        {% macro card_service_overlay_column(name="", delay="") %}
+        <div class="col-12 col-sm-6 col-lg-5 col-xl-3 show-on-scroll" data-show-delay="{{ delay }}" data-show-duration="600" data-show-distance="20">
+            {{ card_service_overlay_global(name, 'card-image-xl card-hover-zoom card-bg-show text-white', 'background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.13) 0%, rgba(0, 0, 0, 0.65) 100%)') }}
+        </div>
+        {% endmacro %}
+
+        {{ card_service_overlay_column('web_design', '80') }}
+        {{ card_service_overlay_column('brand_strategy', '160') }}
+        {{ card_service_overlay_column('packaging', '240') }}
+        {{ card_service_overlay_column('content_production', '320') }}
+    </div>
+</div>  full-wifi-coverage.html-->
+
+{% endblock %}

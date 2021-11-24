@@ -1,7 +1,15 @@
-.card-title{
-    font-size: 22px !important;
+.card-title {
+    font-size: 26px !important;
 }
-.feature-title{
+.feature-title {
     font-size: 20px;
     font-weight: 600;
+}
+
+@media (min-width: 620px) {
+    .card-blog.card-horizontal.card-sm .card-img {
+        width: 352px;
+        height: 228px;
+        margin-right: 40px;
+    }
 }
