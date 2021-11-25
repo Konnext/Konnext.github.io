@@ -1,39 +1,54 @@
 <!DOCTYPE html>
 {{ headerComment | safe }}
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>Konnext{% if page_title %}{{ ' | ' + page_title }}{% elif header_title %}{{ ' | ' + header_title }}{% endif %}</title>
+        <title>
+            Konnext{% if page_title %}{{ ' | ' + page_title }}{% elif
+            header_title %}{{ ' | ' + header_title }}{% endif %}
+        </title>
 
-    <meta name="description" content="Konnext">
-    <meta name="author" content="RunWebRun">
+        <meta name="description" content="Konnext" />
+        <meta name="author" content="RunWebRun" />
 
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+        <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="user-scalable=yes" />
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- START: Styles -->
+        <!-- START: Styles -->
 
-    <!-- Swiper -->
-    <link rel="stylesheet" href="assets/vendor/swiper/dist/css/swiper.min.css" />
+        <!-- Swiper -->
+        <link
+            rel="stylesheet"
+            href="assets/vendor/swiper/dist/css/swiper.min.css"
+        />
 
-    <!-- Fancybox -->
-    <link rel="stylesheet" href="assets/vendor/fancybox/dist/jquery.fancybox.min.css" />
+        <!-- Fancybox -->
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fancybox/dist/jquery.fancybox.min.css"
+        />
 
-    <!-- Konnext -->
-    <link rel="stylesheet" href="assets/css/{{ template_name }}.min.css">
+        <!-- Konnext -->
+        <link rel="stylesheet" href="assets/css/{{ template_name }}.min.css" />
 
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="assets/css/custom.css">
-    {% if custom_css %}<link rel="stylesheet" href="{{ custom_css }}">{% endif %}
-    <!-- END: Styles -->
+        <!-- Custom Styles -->
+        <link rel="stylesheet" href="assets/css/custom.css" />
+        {% if custom_css %}
+        <link rel="stylesheet" href="{{ custom_css }}" />
+        {% endif %}
+        <!-- END: Styles -->
 
-    <!-- jQuery -->
-    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
-    {% block head %}{% endblock %}
-</head>
+        <!-- jQuery -->
+        <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+        {% block head %}{% endblock %}
+    </head>
+</html>
