@@ -120,12 +120,19 @@
             {% endif %}
             {% if navbar == 'top' %}
             <ul class="nav navbar-nav{{ ' order-2' if navbar_purchase }}">
+                <li class="nav-lang">
+                    <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                    <option value="">Language</option>
+                    <option value="https://google.com">Google</option>
+                    <option value="https://yahoo.com">Yahoo</option>
+                  </select>
+                </li>
                 {{ submenu_dropdown(navigation) }}
             </ul>
             {% endif %}
-
+         
             {% if navbar_social !== false %}
-            <ul class="nav nav-gap-sm navbar-nav nav-social align-items-center{{ ' text-white' if navbar_dark }}">
+            <!-- <ul class="nav nav-gap-sm navbar-nav nav-social align-items-center{{ ' text-white' if navbar_dark }}">
                 <li class="nav-item">
                     <a href="https://facebook.com/runwebrun" class="nav-link">
                         <svg width="7" height="15" viewBox="0 0 10 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -147,7 +154,7 @@
                         </svg>
                     </a>
                 </li>
-            </ul>
+            </ul> -->
             {% endif %}
 
             {% if navbar_purchase %}
@@ -270,20 +277,14 @@
                     <div class="mb-60{{ ' text-white' if navbar_mobile_dark }}">
                         <p class="lead mb-17 fw-medium">Contact info:</p>
                         <ul class="list-group borderless font-size-17">
-                            <li class="list-group-item">Email: <a href="mailto:info@konnext.co.au" class="text-decoration-none{{ ' text-white' if navbar_mobile_dark }}">hello@themebau.com</a></li>
-                            <li class="list-group-item">Phone: <a href="callto:+61 666-666-6666" class="text-decoration-none{{ ' text-white' if navbar_mobile_dark }}">+1 202-358-0309</a></li>
+                            <li class="list-group-item">Email: <a href="mailto:info@konnext.co.au" class="text-decoration-none{{ ' text-white' if navbar_mobile_dark }}">info@konnext.com.au</a></li>
+                            <li class="list-group-item">Phone: <a href="callto:+61 666-666-6666" class="text-decoration-none{{ ' text-white' if navbar_mobile_dark }}">+61-413-209-180</a></li>
                         </ul>
                     </div>
 
-                    <div class="mb-60{{ ' text-white' if navbar_mobile_dark }}">
-                        <p class="lead mb-17 fw-medium">Address:</p>
-                        <ul class="list-group borderless font-size-17">
-                            <li class="list-group-item">123 SSS Drive,</li>
-                            <li class="list-group-item">AU 2222</li>
-                        </ul>
-                    </div>
+             <!-- footer soc -->
 
-                    <ul class="nav nav-gap-sm navbar-nav nav-social align-items-center mt-n10{{ ' text-white' if navbar_mobile_dark }}">
+                    <!-- <ul class="nav nav-gap-sm navbar-nav nav-social align-items-center mt-n10{{ ' text-white' if navbar_mobile_dark }}">
                         <li class="nav-item">
                             <a href="https://facebook.com/runwebrun" class="nav-link">
                                 <svg width="8" viewBox="0 0 10 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -305,7 +306,7 @@
                                 </svg>
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </div>
@@ -340,9 +341,9 @@
 
         <div class="navbar-footer">
             <ul class="list-group borderless mb-30{{ ' text-white' if navbar_mobile_dark }}">
-                <li class="list-group-item">Email: <a href="mailto:hello@themebau.com?subject=Test%20Address%20Email" class="text-decoration-none{{ ' text-white' if navbar_mobile_dark }}">hello@themebau.com</a></li>
+                <li class="list-group-item">Email: <a href="mailto:info@konnext.com.au?subject=Test%20Address%20Email" class="text-decoration-none{{ ' text-white' if navbar_mobile_dark }}">info@konnext.com.au</a></li>
                 <li class="list-group-item">
-                    Phone: <a href="callto:+1 202-358-0309" class="text-decoration-none{{ ' text-white' if navbar_mobile_dark }}">+1 202-358-0309</a>
+                    Phone: <a href="callto:+61-413-209-180" class="text-decoration-none{{ ' text-white' if navbar_mobile_dark }}">+61-413-209-180</a>
                 </li>
             </ul>
 

@@ -8,6 +8,11 @@
 .navbar-top {
     min-height: 60px;
 }
+.nav-lang {
+    margin-top: 20px;
+    margin-left: -25%;
+    margin-right: 25%;
+}
 @media (min-width: 620px) {
     .card-blog.card-horizontal.card-sm .card-img {
         width: 352px;
