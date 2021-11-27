@@ -120,12 +120,18 @@
             {% endif %}
             {% if navbar == 'top' %}
             <ul class="nav navbar-nav{{ ' order-2' if navbar_purchase }}">
+               
                 <li class="nav-lang">
-                    <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-                    <option value="">Language</option>
+                    <img width="30" src="assets/images/img/语言.png" alt="">
+                    <div class="selectDiv">
+                        
+                    
+                    <select class="select-lang" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                    <option value=""></option>
                     <option value="https://google.com">Google</option>
                     <option value="https://yahoo.com">Yahoo</option>
                   </select>
+                </div>
                 </li>
                 {{ submenu_dropdown(navigation) }}
             </ul>

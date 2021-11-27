@@ -1,366 +1,173 @@
-{% set page_title = 'Minimal Portfolio & Agency Template' %}
-{% set navbar_dark = true %}
-{% set navbar_mobile_dark = true %}
-{% set footer_dark = true %}
+{% set page_title = 'Minimal Portfolio & Agency Template' %} {% set navbar_dark
+= true %} {% set navbar_mobile_dark = true %} {% set footer_dark = true %} {%
+extends 'layouts/layout-1.html' %} {% block banner %} {% endblock %} {% block
+content %}
 
-{% extends 'layouts/layout-1.html' %}
-
-
-{% block banner %}
-
-{% endblock %}
-
-
-{% block content %}
-<div class="">
-    <div class="py-lg-160 py-30 mt-n8 shape-parent bg-dark overflow-hidden">
-        <div class="background show-on-scroll" data-show-duration="400">
-            <div class="background-video jarallax" data-jarallax-video="mp4:assets/videos/coming-soon.mp4"></div>
-            <div class="background-color" style="background-color: #0e0e0e; opacity: .6;"></div>
-        </div>
-    <div class="container">
-
-
-<!-- banner -->
-<!-- <div class="banner banner-dark shape-parent">
-  
-            <br><br>
-    <div class="swiper swiper-portfolio swiper-portfolio-banner container text-white" data-swiper-slides="1" data-swiper-speed="700" data-swiper-parallax="true" data-swiper-loop="true">
-        <div class="swiper-container show-on-scroll" >
-            <div class="swiper-wrapper">
-                {% macro card_project_swiper_slide(name="") %}
-                <div class="swiper-slide">
-                    {{ card_project_overlay_global(name, "lg", 'h1', '20', 'card-image-sm card-portfolio-banner text-white', bg="rgba(14, 14, 14, .2)", style='swiper-horizontal') }}
-                </div>
-                {% endmacro %}
-                {{ card_project_swiper_slide('colibri') }}
-                {{ card_project_swiper_slide('happy_moments') }}
-                {{ card_project_swiper_slide('luxury_car') }}
-            </div>
-        </div>
-        <div class="swiper-button-prev d-none d-sm-flex">
-            {{- icon.arrow_left | safe -}}
-        </div>
-        <div class="swiper-button-next d-none d-sm-flex">
-            {{- icon.arrow_right | safe -}}
-        </div>
-
-        <div class="swiper-pagination"></div>
+<div class="py-lg-160 py-30 mt-n8 shape-parent bg-dark overflow-hidden">
+    <div class="background show-on-scroll" data-show-duration="400">
+        <div
+            class="background-video jarallax"
+            data-jarallax-video="mp4:assets/videos/coming-soon.mp4"
+        ></div>
+        <div
+            class="background-color"
+            style="background-color: #0e0e0e; opacity: 0.6"
+        ></div>
     </div>
-    <br><br><br><br><br><br>
-</div> -->
-  <!-- banner -->     
-
-  
-  <div class="d-none d-sm-block"><br><br><br><br></div>
+    <div class="container cursor-none">
+        <div class="d-none d-sm-block"><br /><br /><br /><br /></div>
 
         <div class="row justify-content-center text-white">
-            
-            <div class="col-12 col-lg-7 text-center show-on-scroll text-white" data-show-delay="100" data-show-duration="800">
-              
+            <div
+                class="col-12 col-lg-7 text-center show-on-scroll text-white"
+                data-show-delay="100"
+                data-show-duration="800"
+            >
                 <p class="subtitle mt-n10 text-white">who we are</p>
                 <h1 class="h1 mb-0 text-white">KONNEXT</h1>
-                <h1 class="h5 mt-30 text-grey">———澳洲智能家居解决方案集成商</h1>
+                <h1 class="h5 mt-30 text-grey">
+                    ———澳洲智能家居解决方案集成商
+                </h1>
             </div>
         </div>
-        <div class="d-none d-sm-block"><br><br><br><br></div>
+        <div class="d-none d-sm-block"><br /><br /><br /><br /></div>
 
-        <div class="row justify-content-center  mt-lg-100 mt-60">
-            <div class="col-lg-10 show-on-scroll h4 lead text-center text-white" data-show-delay="200" data-show-duration="800">
-                <p class=" ">我们致力于构建次世代智能家居体验，提供先进的跨厂商一体化操作平台， </p>
-                <p class="">让您的居家体验智能、便捷且充满乐趣。 </p>
-                <p class=""></p>
-              
-                <a href="aboutus.html" class="btn btn-dark btn-with-ball ">关于我们</a>  
+        <div class="row justify-content-center mt-lg-100 mt-60">
+            <div
+                class="col-lg-10 show-on-scroll h4 lead text-center text-white"
+                data-show-delay="200"
+                data-show-duration="800"
+            >
+                <p class="">
+                    我们致力于构建次世代智能家居体验，提供先进的跨厂商一体化操作平台，
+                </p>
+                <p class="">让您的居家体验智能、便捷且充满乐趣。</p>
+
+                <a href="aboutus.html" class="btn btn-dark btn-with-ball"
+                    >关于我们</a
+                >
             </div>
-
-          
-
-
         </div>
-    </div>
     </div>
 </div>
 
-<!-- <div class="container-fluid px-1">
-    <div class="row gh-1 gv-1 justify-content-center">
-        {% macro card_service_overlay_column(name="", delay="") %}
-        <div class="col-12 col-sm-6 col-lg-5 col-xl-3 show-on-scroll" data-show-delay="{{ delay }}" data-show-duration="600" data-show-distance="20">
-            {{ card_service_overlay_global(name, 'card-image-xl card-hover-zoom card-bg-show text-white', 'background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.13) 0%, rgba(0, 0, 0, 0.65) 100%)') }}
-        </div>
-        {% endmacro %}
-
-        {{ card_service_overlay_column('web_design', '80') }}
-        {{ card_service_overlay_column('brand_strategy', '160') }}
-        {{ card_service_overlay_column('packaging', '240') }}
-        {{ card_service_overlay_column('content_production', '320') }}
-    </div>
-</div> -->
-
-<!-- <div class="py-160">
-    <div class="container isotope" data-isotope-mode="fitRows">
-        <div class="row justify-content-center mb-100 mb-md-5">
-            <div class="col-12 col-lg-10 mt-8">
-                <div class="row justify-content-between gh-1">
-                    <div class="col-md col-lg-6">
-                        <h2 class="display-1 mt-n30">成功案例</h2>
-                    </div>
-                    <div class="d-none d-lg-block col-auto">
-                        <hr class="mt-30 mx-2 width-70px">
-                    </div>
-                    <div class="col-auto">
-                        <a href="#" class="btn btn-dark btn-with-ball">all projects</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row gh-1 gv-5 isotope-grid">
-            <div class="col-lg-1 d-none d-lg-block isotope-item"></div>
-            <div class="col-md-5 col-lg-4 mt-md-160 isotope-item">
-                {{ card_project_global(name='watch_design', image_size="md_vertical", classes='card-hover-frame show-on-scroll', data='data-show-delay=80 data-show-duration=600 data-show-distance=20') }}
-            </div>
-            <div class="col-lg-1 d-none d-lg-block isotope-item"></div>
-            <div class="col-md-7 col-lg-6 ps-lg-0 isotope-item">
-                {{ card_project_global(name='watch_design', image_size="md", classes='card-hover-frame show-on-scroll', data='data-show-delay=160 data-show-duration=600 data-show-distance=20') }}
-            </div>
-            <div class="col-md-7 col-lg-6 ps-lg-0 ms-lg-30 me-lg-n30 isotope-item">
-                {{ card_project_global(name='watch_design', image_size="md", classes='card-hover-frame show-on-scroll', data='data-show-delay=240 data-show-duration=600 data-show-distance=20') }}
-            </div>
-            <div class="col-lg-1 d-none d-lg-block isotope-item"></div>
-            <div class="col-md-5 col-lg-4 mt-md-n160 isotope-item">
-                {{ card_project_global(name='watch_design', image_size="md_vertical", classes='card-hover-frame show-on-scroll', data='data-show-delay=320 data-show-duration=600 data-show-distance=20') }}
-            </div>
-        </div>
-    </div>
-</div> -->
-    
-
 <div class="py-160 mt-n8 shape-parent bg-dark overflow-hidden">
     <div class="shape justify-content-end mt-n160">
-        <svg class="mt-n160" data-rellax-speed="-1" width="415" height="641" viewBox="0 0 415 641" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="320.5" cy="320.5" r="320.5" fill="#003a44"/>
+        <svg
+            class="mt-n160"
+            data-rellax-speed="-1"
+            width="415"
+            height="641"
+            viewBox="0 0 415 641"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <circle cx="320.5" cy="320.5" r="320.5" fill="#003a44" />
         </svg>
     </div>
     <div class="container">
         <div class="row gh-1 gv-1 justify-content-xl-end text-white">
             <div class="col-lg-5 show-on-scroll" data-show-duration="600">
-                <img class="w-100" src="assets/images/img/娱乐1.jpg" alt="">
+                <img class="w-100" src="assets/images/img/娱乐1.jpg" alt="" />
             </div>
             <div class="d-none d-lg-block col-1 order-lg-1"></div>
-            <div class="col-lg-6 col-xl-4 align-self-center order-11 order-lg-2">
-                <h2 style="text-indent: 2em;" class="h3 mt-30 mt-lg-0 mt-xl-0 mb-0 text-white">为栖身之所,</h2>
-                
-               
+            <div
+                class="col-lg-6 col-xl-4 align-self-center order-11 order-lg-2"
+            >
+                <h2
+                    style="text-indent: 2em"
+                    class="h3 mt-30 mt-lg-0 mt-xl-0 mb-0 text-white"
+                >
+                    为栖身之所,
+                </h2>
             </div>
-            
+
             <div class="d-none d-xl-block col-2 order-lg-3"></div>
-            <div class="d-none d-lg-block col-lg-2 col-xl-auto order-10 order-lg-4 show-on-scroll" data-show-delay="100" data-show-duration="600">
-                <img class="mw-100" width="140" src="assets/images/img/衣帽间3.jpg" alt="">
+            <div
+                class="
+                    d-none d-lg-block
+                    col-lg-2 col-xl-auto
+                    order-10 order-lg-4
+                    show-on-scroll
+                "
+                data-show-delay="100"
+                data-show-duration="600"
+            >
+                <img
+                    class="mw-100"
+                    width="140"
+                    src="assets/images/img/衣帽间3.jpg"
+                    alt=""
+                />
             </div>
-            <div class="d-none d-lg-block col-lg-3 order-9 order-lg-5 show-on-scroll" data-show-delay="200" data-show-duration="600">
-                <img class="w-100" src="assets/images/img/office2.jpg" alt="">
+            <div
+                class="
+                    d-none d-lg-block
+                    col-lg-3
+                    order-9 order-lg-5
+                    show-on-scroll
+                "
+                data-show-delay="200"
+                data-show-duration="600"
+            >
+                <img class="w-100" src="assets/images/img/office2.jpg" alt="" />
             </div>
             <div class="d-none d-lg-block col-1 order-lg-6"></div>
             <div class="col-lg-6 col-xl-5 mt-xl-n60 order-12 order-lg-7">
-                <h2 style="text-indent: 5em;" class="h3  mt-lg-0 mt-xl-0 mb-0 text-white">赋予“生命”。</h2>
-              
+                <h2
+                    style="text-indent: 5em"
+                    class="h3 mt-lg-0 mt-xl-0 mb-0 text-white"
+                >
+                    赋予“生命”。
+                </h2>
             </div>
-
         </div>
     </div>
 </div>
 
-
-
-<div class="container mt-n10">
-<div class="py-160 ">
-   
+<div class="container py-160">
     <div class="row gh-1 gv-5">
         <div class="col-12 col-lg-5">
-            <h1 class="display-5 mt-n50 text-dark mb-100 ">服务支持</h1>
+            <h1 class="display-5 mt-n50 text-dark mb-100">服务支持</h1>
 
             <!-- <a href="blog-col-3.html" class="btn btn-dark btn-with-ball mt-5">all posts</a> -->
         </div>
         <div class="col-lg">
-            {{ card_blog_global('01', classes='card-sm show-on-scroll', style='horizontal', data='data-show-duration=500 data-show-distance=20 data-show-origin=right') }}
-            {{ card_blog_global('02', classes='card-sm show-on-scroll', style='horizontal', data='data-show-duration=500 data-show-distance=20 data-show-origin=right data-show-delay=150') }}
-            {{ card_blog_global('04', classes='card-sm show-on-scroll', style='horizontal', data='data-show-duration=500 data-show-distance=20 data-show-origin=right data-show-delay=300') }}
+            {{ card_blog_global('01', classes='card-sm show-on-scroll',
+            style='horizontal', data='data-show-duration=500
+            data-show-distance=20 data-show-origin=right') }} {{
+            card_blog_global('02', classes='card-sm show-on-scroll',
+            style='horizontal', data='data-show-duration=500
+            data-show-distance=20 data-show-origin=right data-show-delay=150')
+            }} {{ card_blog_global('04', classes='card-sm show-on-scroll',
+            style='horizontal', data='data-show-duration=500
+            data-show-distance=20 data-show-origin=right data-show-delay=300')
+            }}
         </div>
     </div>
 </div>
-</div>
-
-<!-- <div class="py-160 mt-n8 shape-parent bg-dark overflow-hidden">
-
-    <div class="container">
-        <h1 class="display-5 mt-n30 text-white mb-60 ">项目流程</h1>
-
-        <div class="row gh-1 gv-5">
-            <div class="col-12 col-lg-4">
-                <ul class="nav nav-opacity nav-tabs nav-gap-md flex-column text-white" id="workTab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="requirement-tab" data-bs-toggle="tab" href="#requirement" role="tab" aria-controls="requirement" aria-selected="true">1.&ensp;确认需求</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="appraisal-tab" data-bs-toggle="tab" href="#appraisal" role="tab" aria-controls="appraisal" aria-selected="false">2.&ensp;预估项目报价</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="design-tab" data-bs-toggle="tab" href="#design" role="tab" aria-controls="design" aria-selected="false">3.&ensp;全系统功能设计</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="invoice-tab" data-bs-toggle="tab" href="#invoice" role="tab" aria-controls="invoice" aria-selected="false">4.&ensp;最终项目报价</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="deployment-tab" data-bs-toggle="tab" href="#deployment" role="tab" aria-controls="deployment" aria-selected="false">5.&ensp;项目实施</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="testing-tab" data-bs-toggle="tab" href="#testing" role="tab" aria-controls="testing" aria-selected="false">6.&ensp;功能测试</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="delivery-tab" data-bs-toggle="tab" href="#delivery" role="tab" aria-controls="delivery" aria-selected="false">7.&ensp;项目交付</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="aftersale-tab" data-bs-toggle="tab" href="#aftersale" role="tab" aria-controls="aftersale" aria-selected="false">8.&ensp;售后服务</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-12 col-lg-7 d-flex align-items-center ">
-                <div class="tab-content text-white me-n30" id="workTabContent">
-                    <div class="tab-pane fade show active" id="requirement" role="tabpanel" aria-labelledby="requirement-tab">
-                        <div class="row gh-5 gv-5">
-                            <div class="col-md ">
-                                <h5 class="text-white" style="text-indent: -2em;margin-left: 2em;margin-right: 2em;">&bull;&ensp;&ensp;&ensp;我们将与您进行充分的沟通，深度引导您关于智能家居系统方案的潜在需求。</h5>
-                                <h5 class="text-white" style="text-indent: -2em;margin-left: 2em;margin-right: 2em;">&bull;&ensp;&ensp;&ensp;也可在我们的标准方案中进行增删减改，达到一个成本与功能性完美的平衡。</h5>
-                                <h5 class="text-white" style="text-indent: -2em;margin-left: 2em;margin-right: 2em;">&bull;&ensp;&ensp;&ensp;或选择定制化服务，达到与众不同的住宅体验。</h5>
-                                
-
-                            </div>
-                            <div class="col-auto mt-lg-n1 d-none d-md-block">
-                                <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="115.152" cy="84.8485" r="83.3485" stroke="currentColor" stroke-width="3" stroke-dasharray="6 6"/><circle cx="73.9394" cy="127.273" r="59.1061" fill="#0E0E0E" stroke="currentColor" stroke-width="3"/><circle cx="40" cy="160" r="38.5" fill="#0E0E0E" stroke="currentColor" stroke-width="3"/><circle cx="19.3939" cy="139.394" r="1.92424" fill="currentColor" stroke="currentColor"/><circle cx="38.7879" cy="139.394" r="1.92424" fill="currentColor" stroke="currentColor"/><circle cx="59.3939" cy="139.394" r="1.92424" fill="currentColor" stroke="currentColor"/><circle cx="49.697" cy="149.091" r="1.92424" fill="currentColor" stroke="currentColor"/><circle cx="29.0909" cy="149.091" r="1.92424" fill="currentColor" stroke="currentColor"/><circle cx="38.7879" cy="158.788" r="1.92424" fill="currentColor" stroke="currentColor"/><circle cx="19.3939" cy="158.788" r="1.92424" fill="currentColor" stroke="currentColor"/><circle cx="59.3939" cy="158.788" r="1.92424" fill="currentColor" stroke="currentColor"/><circle cx="49.697" cy="169.697" r="1.92424" fill="currentColor" stroke="currentColor"/><circle cx="29.0909" cy="169.697" r="1.92424" fill="currentColor" stroke="currentColor"/><circle cx="19.3939" cy="179.394" r="1.92424" fill="currentColor" stroke="currentColor"/><circle cx="38.7879" cy="179.394" r="1.92424" fill="currentColor" stroke="currentColor"/><circle cx="59.3939" cy="179.394" r="1.92424" fill="currentColor" stroke="currentColor"/>
-                                </svg>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-pane fade" id="appraisal" role="tabpanel" aria-labelledby="appraisal-tab">
-                        <div class="row gh-5 gv-5">
-                            <div class="col-md">
-                                <h5 class="text-white" style="text-indent: -2em;margin-left: 2em;margin-right: 2em;">&bull;&ensp;&ensp;&ensp;当您选择中意方案后，我们将提供一个大致的项目报价，以此作为基础来对项目设计进行修改和调整。</h5>
-
-                            </div>
-                            <div class="col-auto mt-lg-n1 d-none d-md-block">
-                                <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="11.5" y="11.5" width="177" height="177" stroke="currentColor" stroke-width="3"/><rect x="1.5" y="1.5" width="24" height="24" fill="#0E0E0E" stroke="currentColor" stroke-width="3"/><rect x="1.5" y="174.5" width="24" height="24" fill="#0E0E0E" stroke="currentColor" stroke-width="3"/><rect x="174.5" y="174.5" width="24" height="24" fill="#0E0E0E" stroke="currentColor" stroke-width="3"/><rect x="174.5" y="1.5" width="24" height="24" fill="#0E0E0E" stroke="currentColor" stroke-width="3"/><rect x="77.5" y="81.5" width="78" height="78" fill="#0E0E0E" stroke="currentColor" stroke-width="3"/><rect x="41.5" y="44.5" width="78" height="78" fill="#0E0E0E" stroke="currentColor" stroke-width="3"/><circle cx="61.4242" cy="63.4242" r="1.92424" fill="currentColor" stroke="currentColor"/><circle cx="80.8182" cy="63.4242" r="1.92424" fill="currentColor" stroke="currentColor"/><circle cx="101.424" cy="63.4242" r="1.92424" fill="currentColor" stroke="currentColor"/><circle cx="91.7272" cy="73.121" r="1.92424" fill="currentColor" stroke="currentColor"/><circle cx="71.1211" cy="73.121" r="1.92424" fill="currentColor" stroke="currentColor"/><circle cx="80.8182" cy="82.8183" r="1.92424" fill="currentColor" stroke="currentColor"/><circle cx="61.4242" cy="82.8183" r="1.92424" fill="currentColor" stroke="currentColor"/><circle cx="101.424" cy="82.8183" r="1.92424" fill="currentColor" stroke="currentColor"/><circle cx="91.7272" cy="93.727" r="1.92424" fill="currentColor" stroke="currentColor"/><circle cx="71.1211" cy="93.727" r="1.92424" fill="currentColor" stroke="currentColor"/><circle cx="61.4242" cy="103.424" r="1.92424" fill="currentColor" stroke="currentColor"/><circle cx="80.8182" cy="103.424" r="1.92424" fill="currentColor" stroke="currentColor"/><circle cx="101.424" cy="103.424" r="1.92424" fill="currentColor" stroke="currentColor"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-pane fade" id="design" role="tabpanel" aria-labelledby="design-tab">
-                        <div class="row gh-5 gv-5">
-                            <div class="col-md">
-                                <h5 class="text-white" style="text-indent: -2em;margin-left: 2em;margin-right: 2em;">&bull;&ensp;&ensp;&ensp;当需求确定后，我们将根据建筑图纸对全屋系统进行详细功能设计和定位排布（需收费），并联系相关系统供应商进行报价。</h5>
-                                <h5 class="text-white" style="text-indent: -2em;margin-left: 2em;margin-right: 2em;">&bull;&ensp;&ensp;&ensp;最后我们将出版一份完整的设计方案，包含功能，设备定位，设备数量等所有详细信息。</h5>
-                                <h5 class="text-white" style="text-indent: -2em;margin-left: 2em;margin-right: 2em;">&bull;&ensp;&ensp;&ensp;之后，与您进行再一次的商讨，对设计进行修改或更换，以确保设计方案满足需求。</h5>
-                            </div>
-                            <div class="col-auto mt-lg-n1 d-none d-md-block">
-                                <svg width="220" height="184" viewBox="0 0 220 184" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="125.848" y="31.0544" width="92.6522" height="92.3368" stroke="currentColor" stroke-width="3"/><path d="M14.3086 124.345L87.0435 2.91903L159.778 124.345H14.3086Z" fill="#0E0E0E" stroke="currentColor" stroke-width="3"/><path d="M173.543 136.332C173.543 161.825 152.807 182.5 127.217 182.5C101.628 182.5 80.8913 161.825 80.8913 136.332C80.8913 110.838 101.628 90.1632 127.217 90.1632C152.807 90.1632 173.543 110.838 173.543 136.332Z" fill="#0E0E0E" stroke="currentColor" stroke-width="3"/><path d="M110.312 117.669C110.312 118.667 109.499 119.48 108.493 119.48C107.487 119.48 106.674 118.667 106.674 117.669C106.674 116.67 107.487 115.858 108.493 115.858C109.499 115.858 110.312 116.67 110.312 117.669Z" fill="currentColor" stroke="currentColor"/><path d="M128.862 117.669C128.862 118.667 128.05 119.48 127.043 119.48C126.037 119.48 125.225 118.667 125.225 117.669C125.225 116.67 126.037 115.858 127.043 115.858C128.05 115.858 128.862 116.67 128.862 117.669Z" fill="currentColor" stroke="currentColor"/><path d="M148.572 117.669C148.572 118.667 147.76 119.48 146.754 119.48C145.748 119.48 144.935 118.667 144.935 117.669C144.935 116.67 145.748 115.858 146.754 115.858C147.76 115.858 148.572 116.67 148.572 117.669Z" fill="currentColor" stroke="currentColor"/><path d="M139.297 126.913C139.297 127.912 138.484 128.725 137.478 128.725C136.472 128.725 135.659 127.912 135.659 126.913C135.659 125.915 136.472 125.102 137.478 125.102C138.484 125.102 139.297 125.915 139.297 126.913Z" fill="currentColor" stroke="currentColor"/><path d="M119.587 126.913C119.587 127.912 118.774 128.725 117.768 128.725C116.762 128.725 115.949 127.912 115.949 126.913C115.949 125.915 116.762 125.102 117.768 125.102C118.774 125.102 119.587 125.915 119.587 126.913Z" fill="currentColor" stroke="currentColor"/><path d="M128.862 136.158C128.862 137.157 128.05 137.97 127.043 137.97C126.037 137.97 125.225 137.157 125.225 136.158C125.225 135.16 126.037 134.347 127.043 134.347C128.05 134.347 128.862 135.16 128.862 136.158Z" fill="currentColor" stroke="currentColor"/><path d="M110.312 136.158C110.312 137.157 109.499 137.97 108.493 137.97C107.487 137.97 106.674 137.157 106.674 136.158C106.674 135.16 107.487 134.347 108.493 134.347C109.499 134.347 110.312 135.16 110.312 136.158Z" fill="currentColor" stroke="currentColor"/><path d="M148.572 136.158C148.572 137.157 147.76 137.97 146.754 137.97C145.748 137.97 144.935 137.157 144.935 136.158C144.935 135.16 145.748 134.347 146.754 134.347C147.76 134.347 148.572 135.16 148.572 136.158Z" fill="currentColor" stroke="currentColor"/><path d="M139.297 146.558C139.297 147.557 138.484 148.37 137.478 148.37C136.472 148.37 135.659 147.557 135.659 146.558C135.659 145.56 136.472 144.747 137.478 144.747C138.484 144.747 139.297 145.56 139.297 146.558Z" fill="currentColor" stroke="currentColor"/><path d="M119.587 146.558C119.587 147.557 118.774 148.37 117.768 148.37C116.762 148.37 115.949 147.557 115.949 146.558C115.949 145.56 116.762 144.747 117.768 144.747C118.774 144.747 119.587 145.56 119.587 146.558Z" fill="currentColor" stroke="currentColor"/><path d="M110.312 155.803C110.312 156.802 109.499 157.615 108.493 157.615C107.487 157.615 106.674 156.802 106.674 155.803C106.674 154.805 107.487 153.992 108.493 153.992C109.499 153.992 110.312 154.805 110.312 155.803Z" fill="currentColor" stroke="currentColor"/><path d="M128.862 155.803C128.862 156.802 128.05 157.615 127.043 157.615C126.037 157.615 125.225 156.802 125.225 155.803C125.225 154.805 126.037 153.992 127.043 153.992C128.05 153.992 128.862 154.805 128.862 155.803Z" fill="currentColor" stroke="currentColor"/><path d="M148.572 155.803C148.572 156.802 147.76 157.615 146.754 157.615C145.748 157.615 144.935 156.802 144.935 155.803C144.935 154.805 145.748 153.992 146.754 153.992C147.76 153.992 148.572 154.805 148.572 155.803Z" fill="currentColor" stroke="currentColor"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-pane fade" id="invoice" role="tabpanel" aria-labelledby="invoice-tab">
-                        <div class="row gh-5 gv-5">
-                            <div class="col-lg">
-                                <h5>&ensp;</h5>
-                                <h5 class="text-white" style="text-indent: -2em;margin-left: 2em;margin-right: 2em;">&bull;&ensp;&ensp;&ensp;设计方案确定并与供应商联系完毕后, 我们将提交一份最终的报价单, 包含本项目硬件、服务、人工项目。</h5>
-
-                            </div>
-                            <div class="col-auto mt-lg-n1 d-none d-md-block">
-                               
-                                <svg fill="white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" t="1635998427968" class="icon" viewBox="0 0 1086 1024" version="1.1" p-id="7639" width="212.109375" height="200"><defs><style type="text/css"/></defs><path d="M573.282424 1023.999592A510.164797 510.164797 0 0 1 210.433254 873.102648a21.612631 21.612631 0 0 1 30.651134-30.478243 468.300435 468.300435 0 1 0-129.668378-409.023462 21.611396 21.611396 0 1 1-42.617673-7.212032 511.980155 511.980155 0 1 1 504.484087 597.610681z" fill="" p-id="7640"/><path d="M565.613466 490.790872L387.053934 275.03504a21.626216 21.626216 0 0 1 33.343297-27.551443l145.216235 175.509237 150.477065-181.832114a21.626216 21.626216 0 0 1 33.343297 27.551443z" fill="" p-id="7641"/><path d="M712.719153 482.20806H413.283995a21.611396 21.611396 0 0 1 0-43.222792h299.435158a21.611396 21.611396 0 0 1 0 43.222792zM709.224282 610.974935H409.801473a21.611396 21.611396 0 0 1 0-43.222793H709.224282a21.611396 21.611396 0 1 1 0 43.222793z" fill="" p-id="7642"/><path d="M559.512877 817.444041a21.611396 21.611396 0 0 1-21.611396-21.611397V439.652134a21.611396 21.611396 0 0 1 43.222793 0v356.229908a21.611396 21.611396 0 0 1-21.611397 21.561999z" fill="" p-id="7643"/><path d="M559.512877 817.444041a21.611396 21.611396 0 0 1-21.611396-21.611397V439.652134a21.611396 21.611396 0 0 1 43.222793 0v356.229908a21.611396 21.611396 0 0 1-21.611397 21.561999zM0 413.496169l57.424567 227.833515 137.078-196.354972z" fill="" p-id="7644"/></svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="deployment" role="tabpanel" aria-labelledby="deployment-tab">
-                        <div class="row gh-5 gv-5">
-                            <div class="col-lg">
-                                <h5>&ensp;</h5>
-                                <h5 class="text-white" style="text-indent: -2em;margin-left: 2em;margin-right: 2em;">&bull;&ensp;&ensp;&ensp;由智能家居工程师对所有硬件设备进行配置，并由现场施工人员进行布线，及设备安装。</h5>
-
-                            </div>
-                            <div class="col-auto mt-lg-n1 d-none d-md-block">
-                                <svg fill="white"xmlns="http://www.w3.org/2000/svg" width="256px" height="256px" viewBox="0 0 256 256" id="Flat">
-                                    <path d="M240,211.98316H227.99414v-108a12.01343,12.01343,0,0,0-12-12h-68v-52a12.01343,12.01343,0,0,0-12-12h-96a12.01343,12.01343,0,0,0-12,12v172H16a4,4,0,0,0,0,8H240a4,4,0,0,0,0-8Zm-24.00586-112a4.00426,4.00426,0,0,1,4,4v108h-72v-112Zm-180-60a4.00427,4.00427,0,0,1,4-4h96a4.00426,4.00426,0,0,1,4,4v172h-104Zm24,32a4.0002,4.0002,0,0,1,4-4h32a4,4,0,1,1,0,8h-32A4.0002,4.0002,0,0,1,59.99414,71.98316Zm56,64a4.0002,4.0002,0,0,1-4,4h-32a4,4,0,0,1,0-8h32A4.0002,4.0002,0,0,1,115.99414,135.98316Zm-16,40a4.0002,4.0002,0,0,1-4,4h-32a4,4,0,0,1,0-8h32A4.0002,4.0002,0,0,1,99.99414,175.98316Zm96,0a4.0002,4.0002,0,0,1-4,4h-16a4,4,0,0,1,0-8h16A4.0002,4.0002,0,0,1,195.99414,175.98316Zm-24-40a4.0002,4.0002,0,0,1,4-4h16a4,4,0,1,1,0,8h-16A4.0002,4.0002,0,0,1,171.99414,135.98316Z"/>
-                                  </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="testing" role="tabpanel" aria-labelledby="testing-tab">
-                        <div class="row gh-5 gv-5">
-                            <div class="col-lg">
-                                <h5>&ensp;</h5>
-                                <h5 class="text-white" style="text-indent: -2em;margin-left: 2em;margin-right: 2em;">&bull;&ensp;&ensp;&ensp;所有设备进场以后，项目工程师将进行一次24小时不间断系统测试，以保证系统稳定性。</h5>
-
-                            </div>
-                            <div class="col-auto mt-lg-n1 d-none d-md-block">
-                                <svg fill="white" t="1636004057723" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="19634" width="200" height="200"><path d="M512 997.878A485.878 485.878 0 1 1 997.878 512 486.4 486.4 0 0 1 512 997.878z m0-929.96A444.082 444.082 0 1 0 956.082 512 444.604 444.604 0 0 0 512 67.918z" p-id="19635"></path><path d="M893.388 532.898A20.898 20.898 0 0 1 872.49 512a359.967 359.967 0 0 0-50.991-184.947 20.898 20.898 0 1 1 35.84-21.525A401.763 401.763 0 0 1 914.286 512a20.898 20.898 0 0 1-20.898 20.898z m-762.776 0A20.898 20.898 0 0 1 109.714 512a402.286 402.286 0 0 1 637.388-326.635 20.898 20.898 0 0 1-24.66 34.064A360.49 360.49 0 0 0 151.51 512a20.898 20.898 0 0 1-20.898 20.898zM512 579.918A67.918 67.918 0 1 1 579.918 512 68.023 68.023 0 0 1 512 579.918z m0-94.04A26.122 26.122 0 1 0 538.122 512 26.122 26.122 0 0 0 512 485.878z" p-id="19636"></path><path d="M548.571 496.327a20.898 20.898 0 0 1-14.106-36.572l240.327-219.428a20.898 20.898 0 1 1 28.212 31.346L562.678 491.102a20.898 20.898 0 0 1-14.107 5.225zM412.735 632.163a20.898 20.898 0 0 1-14.733-35.63l62.694-62.695a20.898 20.898 0 0 1 29.57 29.571l-62.694 62.694a20.898 20.898 0 0 1-14.837 6.06z" p-id="19637"></path></svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="delivery" role="tabpanel" aria-labelledby="delivery-tab">
-                        <div class="row gh-5 gv-5">
-                            <div class="col-lg">
-                                <h5>&ensp;</h5>
-                                <h5 class="text-white" style="text-indent: -2em;margin-left: 2em;margin-right: 2em;">&bull;&ensp;&ensp;&ensp;我们将给予客户一份完整的系统资料及维保说明。</h5>
-
-                            </div>
-                            <div class="col-auto mt-lg-n1 d-none d-md-block">
-                               <svg fill="white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" t="1635997739827" class="icon" viewBox="0 0 1024 1024" version="1.1" p-id="5667" width="200" height="200"><defs><style type="text/css"/></defs><path d="M268.2 959.1c-107.3 0-194.5-87.3-194.5-194.5S161 570.1 268.2 570.1s194.5 87.3 194.5 194.5-87.2 194.5-194.5 194.5z m0-357.1c-89.7 0-162.6 72.9-162.6 162.6 0 89.7 72.9 162.6 162.6 162.6s162.6-72.9 162.6-162.6c0-89.7-72.9-162.6-162.6-162.6z m32-238.2c-82.4 0-149.5-67-149.5-149.5s67-149.5 149.5-149.5c82.4 0 149.5 67 149.5 149.5s-67.1 149.5-149.5 149.5z m0-267c-64.8 0-117.5 52.7-117.5 117.5s52.7 117.5 117.5 117.5 117.5-52.7 117.5-117.5S365 96.8 300.2 96.8z m511.9 753.9c-76.2 0-138.2-62-138.2-138.2 0-76.2 62-138.2 138.2-138.2 76.2 0 138.2 62 138.2 138.2 0 76.2-62 138.2-138.2 138.2z m0-244.5c-58.6 0-106.3 47.7-106.3 106.3s47.7 106.3 106.3 106.3 106.3-47.7 106.3-106.3-47.7-106.3-106.3-106.3z m-260.7 9.4c-77.8 0-141.2-63.3-141.2-141.2s63.3-141.2 141.2-141.2 141.2 63.3 141.2 141.2-63.3 141.2-141.2 141.2z m0-250.4c-60.2 0-109.3 49-109.3 109.3 0 60.2 49 109.3 109.3 109.3s109.3-49 109.3-109.3-49-109.3-109.3-109.3z m233.2 0c-64 0-116.2-52.1-116.2-116.2s52.1-116.2 116.2-116.2S900.8 185 900.8 249s-52.1 116.2-116.2 116.2z m0-200.4c-46.4 0-84.2 37.8-84.2 84.2s37.8 84.2 84.2 84.2 84.2-37.8 84.2-84.2-37.7-84.2-84.2-84.2z" p-id="5668"/><path d="M400.1 658.4c-4.1 0-8.2-1.6-11.3-4.7-6.2-6.2-6.2-16.3 0-22.6l65.4-65.4c6.2-6.2 16.3-6.2 22.6 0 6.2 6.2 6.2 16.3 0 22.6l-65.4 65.4c-3.2 3.2-7.3 4.7-11.3 4.7zM651 407.8c-4.1 0-8.2-1.6-11.3-4.7-6.2-6.2-6.2-16.3 0-22.6l64.2-64.2c6.2-6.2 16.3-6.2 22.6 0 6.2 6.2 6.2 16.3 0 22.6l-64.2 64.2c-3.1 3.2-7.2 4.7-11.3 4.7z m-184.6-12.1c-4.1 0-8.2-1.6-11.3-4.7l-69.3-69.3c-6.2-6.2-6.2-16.3 0-22.6 6.2-6.2 16.3-6.2 22.6 0l69.3 69.3c6.2 6.2 6.2 16.3 0 22.6-3.1 3.2-7.2 4.7-11.3 4.7z m250.7 250.7c-4.1 0-8.2-1.6-11.3-4.7L633 568.9c-6.2-6.2-6.2-16.3 0-22.6 6.2-6.2 16.3-6.2 22.6 0l72.8 72.8c6.2 6.2 6.2 16.3 0 22.6-3.2 3.1-7.2 4.7-11.3 4.7z" p-id="5669"/></svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="aftersale" role="tabpanel" aria-labelledby="aftersale-tab">
-                        <div class="row gh-5 gv-5">
-                            <div class="col-lg">
-                                <h5>&ensp;</h5>
-                                <h5 class="text-white" style="text-indent: -2em;margin-left: 2em;margin-right: 2em;">&bull;&ensp;&ensp;&ensp;对于客制化的客户，维修工程师将在交付后6个月或12个月进行一次售后回访，免费提供一次功能修改服务。</h5>
-
-                            </div>
-                            <div class="col-auto mt-lg-n1 d-none d-md-block">
-                                <svg fill="white" t="1636004264058" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="20586" width="200" height="200"><path d="M448 917.376C448 917.333333 576 917.333333 576 917.333333c0.085333 0 0-42.709333 0-42.709333C576 874.666667 448 874.666667 448 874.666667c-0.085333 0 0 42.709333 0 42.709333z m371.349333-173.034667C809.6 745.877333 799.573333 746.666667 789.333333 746.666667a21.333333 21.333333 0 0 1-21.333333-21.333334V384a21.333333 21.333333 0 0 1 21.333333-21.333333 191.146667 191.146667 0 0 1 92.373334 23.637333C828.202667 234.517333 681.045333 128 511.296 128 341.290667 128 193.749333 234.816 140.458667 387.328A191.125333 191.125333 0 0 1 234.666667 362.666667a21.333333 21.333333 0 0 1 21.333333 21.333333v341.333333a21.333333 21.333333 0 0 1-21.333333 21.333334 192 192 0 0 1-148.906667-313.216 21.269333 21.269333 0 0 1 0.042667-8.682667C127.36 228.288 304.469333 85.333333 511.274667 85.333333c209.706667 0 388.544 146.944 427.008 347.093334l0.213333 1.344A191.210667 191.210667 0 0 1 981.333333 554.666667c0 70.4-37.909333 131.968-94.421333 165.397333-57.642667 100.693333-154.752 174.762667-268.778667 204.074667A42.517333 42.517333 0 0 1 576 960h-128c-23.573333 0-42.666667-19.157333-42.666667-42.624v-42.752c0-23.552 18.922667-42.624 42.666667-42.624h128c23.573333 0 42.666667 19.157333 42.666667 42.624v5.141333a392.810667 392.810667 0 0 0 200.682666-135.424zM85.333333 554.666667c0.298667 133.589333 128 148.949333 128 148.949333V406.144s-128.298667 14.933333-128 148.522667z m853.333334 0c0.298667-133.589333-128-148.522667-128-148.522667v297.472s127.701333-15.36 128-148.949333z"  p-id="20587"></path></svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-
-
 
 <div class="pb-160 mt-n8 shape-parent bg-dark overflow-hidden">
     <div class="container text-white">
-        <br><br><br><br>
-        <h2 class="display-5 mb-60 pb-30  text-white text-center">服务宗旨</h2>
+        <br /><br /><br /><br />
+        <h2 class="display-5 mb-60 pb-30 text-white text-center">服务宗旨</h2>
 
-        <div class="swiper mt-n4" data-swiper-slides="3" data-swiper-breakpoints="828:1, 1024:2" data-swiper-gap="60" data-swiper-free="true" data-swiper-grabCursor="true" data-swiper-freeMode="true">
+        <div
+            class="swiper mt-n4"
+            data-swiper-slides="3"
+            data-swiper-breakpoints="828:1, 1024:2"
+            data-swiper-gap="60"
+            data-swiper-free="true"
+            data-swiper-grabCursor="true"
+            data-swiper-freeMode="true"
+        >
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     {% macro slide_feature(name="") %}
-                    <div class="swiper-slide">
-                        {{ feature_global(name) }}
-                    </div>
-                    {% endmacro %}
-                    {{ slide_feature( 'people' ) }}
-                    {{ slide_feature( 'quality' ) }}
-                    {{ slide_feature( 'service' ) }}
+                    <div class="swiper-slide">{{ feature_global(name) }}</div>
+                    {% endmacro %} {{ slide_feature( 'people' ) }} {{
+                    slide_feature( 'quality' ) }} {{ slide_feature( 'service' )
+                    }}
                 </div>
             </div>
             <div class="swiper-scrollbar"></div>
@@ -368,77 +175,61 @@
     </div>
 </div>
 
-
-
-<!-- <div class="container">
-    <div class="pt-160">
-        <div class="row gh-1 gv-3 text-center text-lg-start text-xl-start justify-content-md-center">
-            <div class="d-none d-xl-block col-lg-1"></div>
-            <div class="col-12 col-lg-4">
-                <p class="subtitle mt-n10">与我们合作的</p>
-                <h2 class="h3">供应商品牌</h2>
-            </div>
-            <div class="d-none d-lg-block col-lg-2 col-xl-1"></div>
-            <div class="col-md-8 col-lg ms-lg-n30 text-center">
-                <div class="row gh-1 gv-3 align-items-center justify-content-between">
-                    {% macro brand_col(name="", delay="") %}
-                    <div class="col-6 col-sm-auto show-on-scroll" data-show-delay="{{ delay }}" data-show-duration="500" data-show-distance="20">
-                        <span  class="brand text-grey">
-                            {{ brands[name] | safe }}
-                        </span>
-                    </div>
-                    {% endmacro %}
-                    {{ brand_col('natural', '50') }}
-                    {{ brand_col('wave', '100') }}
-                    {{ brand_col('retro', '150') }}
-                    {{ brand_col('hub', '200') }}
-                    {{ brand_col('iconic', '250') }}
-                    {{ brand_col('hipster', '300') }}
-                </div>
-            </div>
-            <div class="d-none d-xl-block col-lg-1"></div>
-        </div>
-    </div> -->
-
-    <!-- <div class="pt-160">
-        <h2 class="text-center mb-100 mt-n10">What’s new?</h2>
-
-        <div class="row gh-1 gv-4 pb-30">
-            {% macro card_blog_column(name="", delay="") %}
-                <div class="col-12 col-sm-6 col-lg-4 show-on-scroll" data-show-delay="{{ delay }}" data-show-duration="500" data-show-distance="20">
-                    {{ card_blog_global(name) }}
-                </div>
-            {% endmacro %}
-            {{ card_blog_column('01', '100') }}
-            {{ card_blog_column('02', '200') }}
-            {{ card_blog_column('03', '300') }}
-        </div>
-
-        <div class="text-center pt-60 mt-n8">
-            <a href="blog-col-3.html" class="btn btn-dark btn-with-ball">all posts</a>
-        </div>
-    </div> -->
-
 <div class="container">
-    <div class=" pb-130  text-center text-md-start">
-        <hr class="mt-0 mb-100 pb-7">
-        <div class="row gv-1 pb-7 mb-n30 align-items-center justify-content-center justify-content-md-between">
+    <div class="pb-130 text-center text-md-start">
+        <hr class="mt-0 mb-100 pb-7" />
+        <div
+            class="
+                row
+                gv-1
+                pb-7
+                mb-n30
+                align-items-center
+                justify-content-center justify-content-md-between
+            "
+        >
             <div class="col-md-10 col-lg-8 me-md-auto">
                 <div class="interactive-links">
-                    <img class="interactive-links-image" src="assets/images/logo1.png" width="400" alt="">
-                    <a href="contact_us.html" class="nav-link display-2"><u>快速联系</u><br>Get in touch</a>
+                    <img
+                        class="interactive-links-image"
+                        src="assets/images/logo1.png"
+                        width="400"
+                        alt=""
+                    />
+                    <a href="contact_us.html" class="nav-link display-2"
+                        ><u>快速联系</u><br />Get in touch</a
+                    >
                 </div>
             </div>
             <div class="col-auto">
                 <a href="contact_us.html" class="btn btn-clean me-xl-100">
-                    <svg class="icon-arrow icon-arrow-right" width="69" height="30" viewBox="0 0 69 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M54 2L67 15L54 28" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M17 15L67 15" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg
+                        class="icon-arrow icon-arrow-right"
+                        width="69"
+                        height="30"
+                        viewBox="0 0 69 30"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M54 2L67 15L54 28"
+                            stroke="currentColor"
+                            stroke-width="2.4"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M17 15L67 15"
+                            stroke="currentColor"
+                            stroke-width="2.4"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
                     </svg>
                 </a>
             </div>
         </div>
     </div>
 </div>
-</div>
+
 {% endblock %}

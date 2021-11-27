@@ -23,7 +23,7 @@ navbar_mobile_dark = true %} {% set footer_dark = true %} {% extends
 {% endblock %} {% block content %}
 
 <div class="container">
-    <div class="row justify-content-center text-center pt-20 pb-130 mt-10">
+    <div class="row justify-content-center text-center pt-20 pb-60 mt-10">
         <div class="col-12 col-lg-8">
             <div
                 class="subtitle show-on-scroll"
@@ -40,148 +40,131 @@ navbar_mobile_dark = true %} {% set footer_dark = true %} {% extends
             >
                 {{page_title}}
             </h1>
+
+            <h5 class="mt-30">
+                如果您有特殊的需求，我们可为您提供个性化的集成开发服务。
+            </h5>
         </div>
     </div>
-    <div class="row gv-3 justify-content-center">
-        <div
-            class="col-12 col-lg-10 show-on-scroll"
-            data-show-duration="500"
-            data-show-distance="10"
-            data-show-delay="50"
-        >
-            <div class="row justify-content-between">
-                <div class="row justify-content-between">
-                    <div class="col-12 col-lg-10 col-xl-8">
-                        <h2 style="text-indent: 2em" class="h4 mb-12">
-                            如果您有特别的爱好或习惯，我们也可以尝试将您所需设备接入我们的核心系统。
-                        </h2>
-                    </div>
 
-                    <div class="col-lg-auto d-none d-lg-block">
-                        <hr class="mt-25 mb-160 width-70px" />
-                    </div>
-
-                    <div class="row justify-content-center">
-                        <img
-                            style="width: 80%"
-                            class="mb-60 show-on-scroll"
-                            src="assets/images/img/灌溉1.jpeg"
-                            alt=""
-                            data-show-duration="800"
-                        />
-                    </div>
-
-                    <div class="col-12 col-lg-12 col-xl-12">
-                        <span class="h5 mb-12" style="font-weight: bolder"
-                            >自动化灌溉：</span
-                        >
-                        <h2 style="text-indent: 2em" class="h5 mb-12">
-                            根据本地每天的气象台收集到的数据进行分析，若长时间不下雨，则每两天自动打开灌溉系统，定时关闭，同时在Krista上也配置一个手动按键来打开灌溉系统。
-                        </h2>
-                    </div>
-
-                    <div class="mt-130 row justify-content-center">
-                        <img
-                            style="width: 80%"
-                            class="mb-60 show-on-scroll"
-                            src="assets/images/img/车道门.png"
-                            alt=""
-                            data-show-duration="800"
-                        />
-                    </div>
-
-                    <div class="col-12 col-lg-12 col-xl-12">
-                        <span class="h5 mb-12" style="font-weight: bolder"
-                            >自动化车道门：</span
-                        >
-                        <h2 style="text-indent: 2em" class="h5 mb-12">
-                            通过自动车牌识别匹配身份信息，自动打开院子的车道门，无需手动使用遥控器打开车道门。
-                        </h2>
-                    </div>
-                </div>
-            </div>
-
-            <!--    <div
-            class="col-12 col-lg-5 show-on-scroll"
-            data-show-duration="500"
-            data-show-distance="10"
-            data-show-delay="150"
-        >
-            <h4 class="mb-25">独立工作</h4>
-            <p class="mb-n10">
-                &#9679; 每个单独的系统都能够独立工作而不受RIC本身的影响。
-            </p>
-        </div>
-        <div
-            class="col-12 col-lg-5 show-on-scroll"
-            data-show-duration="500"
-            data-show-distance="10"
-            data-show-delay="250"
-        >
-            <h4 class="md-25">相互协同</h4>
-            <p class="mb-n10">
-                &#9679; 不同系统间可以进行交互。
-                例如，实时监测系统会发送当前的光照强度给智能家居系统，让屋外的景观灯自动打开。
-            </p>
-        </div>
-        <div
-            class="col-12 col-lg-5 show-on-scroll"
-            data-show-duration="500"
-            data-show-distance="10"
-            data-show-delay="250"
-        >
-            <h4 class="md-25">统一控制</h4>
-            <p class="mb-n10">
-                &#9679;
-                作为全屋系统的中枢控制核心，RIC能发送指令前往所有的系统，实现一键启停功能。例如：出门呼叫siri启动离家模式，家中所有的灯光自动关闭，空调自动关闭，前厅灯光延时关闭，警报系统开启倒计时，车库门自动打开，前院门自动打开。
-            </p>
-        </div>
-        <div
-            class="col-12 col-lg-5 show-on-scroll"
-            data-show-duration="500"
-            data-show-distance="10"
-            data-show-delay="250"
-        >
-           </div> -->
-        </div>
-
-        <div class="page-navigation mt-160">
-            <!-- <span class=" d-none d-sm-inline">&#12288&#12288</span>
-    <span>&#12288&#12288</span> -->
-            <a href="scene-interaction-customized.html" class="btn btn-clean"
-                >{{ icon.arrow_left | replace(' width', ' class="icon-arrow
-                icon-arrow-left" width') | safe }}<span
-                    class="d-none d-sm-inline"
+    <div class="row justify-content-between">
+        <div class="row justify-content-between">
+            <div class="col-12 col-lg-8">
+                <h1
+                    class="h3 mt-30 mb-60 show-on-scroll"
+                    data-show-duration="500"
+                    data-show-distance="10"
                 >
-                    上一篇：个性化场景交互</span
-                ></a
-            >
-            <a href="customization.html" class="btn btn-clean"
-                >返回<span class="d-none d-sm-inline">：定制化服务</span></a
-            >
+                    防盗模式
+                </h1>
+            </div>
+            <div class="row justify-content-center">
+                <img
+                    style="width: 100%"
+                    class="mb-60 show-on-scroll"
+                    src="assets/images/img/office3.jpg"
+                    alt=""
+                    data-show-duration="800"
+                />
+            </div>
+        </div>
 
-            <a href="real-time-environment-detction.html" class="btn btn-clean"
-                ><span class="d-none d-sm-inline">下一篇： 环境实时监测</span>{{
-                icon.arrow_right | replace(' width', ' class="icon-arrow
-                icon-arrow-right" width') | safe }}</a
-            >
+        <div class="col-12 col-lg-10 col-xl-8">
+            <h2 class="h4 mb-12">
+                若客户出门旅游或长期不在家的情况下，收到来自摄像头检测到异常的陌生人停留。可以在旅行时或在外远程启动防盗模式，照明，空调，窗帘以及音频播放设备会按设定运行，模拟有人在家的情况，以防家中被非法入侵。
+            </h2>
+        </div>
+
+        <div class="col-lg-auto d-none d-lg-block">
+            <hr class="mt-25 mb-0 width-70px" />
         </div>
     </div>
 
-    <!-- <div class="container-fluid px-1">
-    <div class="row gh-1 gv-1 justify-content-center">
-        {% macro card_service_overlay_column(name="", delay="") %}
-        <div class="col-12 col-sm-6 col-lg-5 col-xl-3 show-on-scroll" data-show-delay="{{ delay }}" data-show-duration="600" data-show-distance="20">
-            {{ card_service_overlay_global(name, 'card-image-xl card-hover-zoom card-bg-show text-white', 'background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.13) 0%, rgba(0, 0, 0, 0.65) 100%)') }}
+    <div class="row justify-content-between">
+        <div class="row justify-content-between">
+            <div class="col-12 col-lg-8">
+                <h1
+                    class="h3 mt-100 mb-60 show-on-scroll"
+                    data-show-duration="500"
+                    data-show-distance="10"
+                >
+                    警报模式
+                </h1>
+            </div>
+            <div class="row justify-content-center">
+                <img
+                    style="width: 100%"
+                    class="mb-60 show-on-scroll"
+                    src="assets/images/img/1.3.1.1.3 电动窗帘控制.jpg"
+                    alt=""
+                    data-show-duration="800"
+                />
+            </div>
         </div>
-        {% endmacro %}
 
-        {{ card_service_overlay_column('web_design', '80') }}
-        {{ card_service_overlay_column('brand_strategy', '160') }}
-        {{ card_service_overlay_column('packaging', '240') }}
-        {{ card_service_overlay_column('content_production', '320') }}
+        <div class="col-12 col-lg-10 col-xl-8">
+            <h2 class="h4 mb-12">
+                当安防系统被触发，在安防警报响起的同时，全屋灯光开启最大亮度，窗帘全部升起以起到震慑作用，并同时发送报警消息到屋主手机或第三方安防公司。
+            </h2>
+        </div>
+
+        <div class="col-lg-auto d-none d-lg-block">
+            <hr class="mt-25 mb-0 width-70px" />
+        </div>
     </div>
-</div>  full-wifi-coverage.html-->
+
+    <div class="row justify-content-between">
+        <div class="row justify-content-between">
+            <div class="col-12 col-lg-8">
+                <h1
+                    class="h3 mt-100 mb-60 show-on-scroll"
+                    data-show-duration="500"
+                    data-show-distance="10"
+                >
+                    节能模式
+                </h1>
+            </div>
+            <div class="row justify-content-center">
+                <img
+                    style="width: 100%"
+                    class="mb-60 show-on-scroll"
+                    src="assets/images/img/1.3.1.1.3 电动窗帘控制.jpg"
+                    alt=""
+                    data-show-duration="800"
+                />
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-10 col-xl-8">
+            <h2 class="h4 mb-12">
+                系统将根据太阳能实时发电量与家中用电量情况，以及当日时间来判断是否启动高功率用电设备（例如游泳池水泵换水），以此来最大程度降低能源消耗。
+            </h2>
+        </div>
+
+        <div class="col-lg-auto d-none d-lg-block">
+            <hr class="mt-25 mb-0 width-70px" />
+        </div>
+    </div>
+
+    <div class="page-navigation mt-160">
+        <!-- <span class=" d-none d-sm-inline">&#12288&#12288</span>
+<span>&#12288&#12288</span> -->
+        <a href="scene-interaction-customized.html" class="btn btn-clean"
+            >{{ icon.arrow_left | replace(' width', ' class="icon-arrow
+            icon-arrow-left" width') | safe }}<span class="d-none d-sm-inline">
+                上一篇：个性化场景交互</span
+            ></a
+        >
+        <a href="customization.html" class="btn btn-clean"
+            >返回<span class="d-none d-sm-inline">：定制化服务</span></a
+        >
+
+        <a href="real-time-environment-detction.html" class="btn btn-clean"
+            ><span class="d-none d-sm-inline">下一篇： 环境实时监测</span>{{
+            icon.arrow_right | replace(' width', ' class="icon-arrow
+            icon-arrow-right" width') | safe }}</a
+        >
+    </div>
 
     {% endblock %}
 </div>

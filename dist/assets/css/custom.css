@@ -13,10 +13,33 @@
     margin-left: -25%;
     margin-right: 25%;
 }
+
+.nav-lang .selectDiv {
+    max-width: 22px;
+    overflow: hidden;
+}
+
+.nav-lang .selectDiv img {
+    width: 22px;
+}
+li select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url("/src/images/");
+    border: none;
+    line-height: 25px;
+    min-width: 44px;
+}
+
 @media (min-width: 620px) {
     .card-blog.card-horizontal.card-sm .card-img {
         width: 352px;
         height: 228px;
         margin-right: 40px;
     }
+}
+
+.cursor-none {
+    pointer-events: none;
 }

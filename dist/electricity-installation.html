@@ -22,6 +22,7 @@
         <!-- END: Styles -->
         <!-- jQuery -->
         <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+        <script src="assets/js/email.js"></script>
     </head>
 </html>
 <body>
@@ -37,11 +38,14 @@
             </a>
             <ul class="nav navbar-nav">
                 <li class="nav-lang">
-                    <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-                        <option value="">Language</option>
-                        <option value="https://google.com">Google</option>
-                        <option value="https://yahoo.com">Yahoo</option>
-                    </select>
+                    <img width="30" src="assets/images/img/语言.png" alt="">
+                    <div class="selectDiv">
+                        <select class="select-lang" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                            <option value=""></option>
+                            <option value="https://google.com">Google</option>
+                            <option value="https://yahoo.com">Yahoo</option>
+                        </select>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a href="aboutus.html" class="nav-link">
@@ -70,7 +74,7 @@
                         </ul>
                     </div>
                 </li>
-                <li class="nav-item navbar-dropdown active">
+                <li class="nav-item navbar-dropdown">
                     <a href="service.html" class="nav-link">
                         <span class="nav-link-name">服务支持</span>
                         <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -148,7 +152,7 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="nav-item navbar-dropdown active">
+                            <li class="nav-item navbar-dropdown">
                                 <a href="system-deployment.html" class="nav-link">
                                     <span class="nav-link-name">系统安装</span>
                                     <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -162,8 +166,8 @@
                                                 <span class="nav-link-name">居家方案部署</span>
                                             </a>
                                         </li>
-                                        <li class="nav-item active">
-                                            <a href="power-installation.html" class="nav-link">
+                                        <li class="nav-item">
+                                            <a href="electrical-installation.html" class="nav-link">
                                                 <span class="nav-link-name">电力安装</span>
                                             </a>
                                         </li>
@@ -188,12 +192,12 @@
                     <div class="dropdown-menu">
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href="business-proj.html" class="nav-link">
+                                <a href="business-project.html" class="nav-link">
                                     <span class="nav-link-name">商业项目</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="civil-proj.html" class="nav-link">
+                                <a href="residential-project.html" class="nav-link">
                                     <span class="nav-link-name">住宅项目</span>
                                 </a>
                             </li>
@@ -282,7 +286,7 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="nav-item navbar-collapse active">
+                            <li class="nav-item navbar-collapse">
                                 <a href="#navbarCollapse服务支持" class="nav-link collapsed" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="navbarCollapse服务支持">
                                     <span class="nav-link-name">服务支持</span>
                                     <svg class="collapse-icon" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -360,7 +364,7 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li class="nav-item navbar-collapse active">
+                                        <li class="nav-item navbar-collapse">
                                             <a href="#navbarCollapse系统安装" class="nav-link collapsed" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="navbarCollapse系统安装">
                                                 <span class="nav-link-name">系统安装</span>
                                                 <svg class="collapse-icon" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -374,8 +378,8 @@
                                                             <span class="nav-link-name">居家方案部署</span>
                                                         </a>
                                                     </li>
-                                                    <li class="nav-item active">
-                                                        <a href="power-installation.html" class="nav-link">
+                                                    <li class="nav-item">
+                                                        <a href="electrical-installation.html" class="nav-link">
                                                             <span class="nav-link-name">电力安装</span>
                                                         </a>
                                                     </li>
@@ -400,12 +404,12 @@
                                 <div class="navbar-collapse-menu collapse" id="navbarCollapse展示区">
                                     <ul class="nav navbar-nav">
                                         <li class="nav-item">
-                                            <a href="business-proj.html" class="nav-link">
+                                            <a href="business-project.html" class="nav-link">
                                                 <span class="nav-link-name">商业项目</span>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="civil-proj.html" class="nav-link">
+                                            <a href="residential-project.html" class="nav-link">
                                                 <span class="nav-link-name">住宅项目</span>
                                             </a>
                                         </li>
@@ -485,10 +489,10 @@
                             <img style="width: 80%" class="mb-100 show-on-scroll" src="assets/images/img/1.3.3.2电力安装.jpg" alt="" data-show-duration="800" />
                         </div>
                         <div class="col-12 col-lg-10 col-xl-8">
-                            <h2 style="text-indent: 2em" class="h4 mb-12"> KONNEXT拥有专业电力工程团队，若您有需要，我们可以派遣团队进行电力安装。 </h2>
+                            <h2 class="h4 mb-12"> KONNEXT拥有专业的持证电力工程团队，若您有需要，我们可以提供全屋电力安装服务。 </h2>
                         </div>
                         <div class="col-12 col-lg-10 col-xl-8">
-                            <h2 style="text-indent: 2em" class="h5 mb-12"> 当然，若您有心仪的电力服务公司，KONNEXT也将积极的与其进行密切合作，配合完成包括布线，以及系统安装等一系列服务。 </h2>
+                            <h2 class="h5 mb-12"> 当然，若您有心仪的电力服务公司，KONNEXT也将积极的与其进行配合，指导其完成包括布线、系统安装等一系列电力服务。 </h2>
                         </div>
                         <div class="col-lg-auto d-none d-lg-block">
                             <hr class="mt-25 mb-0 width-70px" />
@@ -657,7 +661,7 @@
     </div>
 </div>  full-wifi-coverage.html-->
     </div>
-    <footer class="footer bg-dark text-white shape-parent overflow-hidden py-130">
+    <footer class="footer bg-dark text-white shape-parent overflow-hidden py-   0">
         <div class="shape align-items-end justify-content-end">
             <svg data-rellax-speed="-1" class="mb-n130" width="525" height="641" viewBox="0 0 525 641" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="320.5" cy="320.5" r="320.5" fill=" #003a44" />

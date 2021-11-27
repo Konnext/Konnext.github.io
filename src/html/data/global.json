@@ -81,7 +81,7 @@
                         "home-solution-deployment.html": {
                             "name": "居家方案部署"
                         },
-                        "power-installation.html": {
+                        "electrical-installation.html": {
                             "name": "电力安装"
                         }
                     }
@@ -95,10 +95,10 @@
         "gallery.html": {
             "name": "展示区",
             "sub": {
-                "business-proj.html": {
+                "business-project.html": {
                     "name": "商业项目"
                 },
-                "civil-proj.html": {
+                "residential-project.html": {
                     "name": "住宅项目"
                 }
             }
