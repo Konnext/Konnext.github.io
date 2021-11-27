@@ -634,8 +634,8 @@
     "blog": {
         "01": {
             "href": "featured-solution.html",
-            "image": "assets/images/blog/blog-1.png",
-            "title": "精选家居方案",
+            "image": "assets/images/0主页/0.2.1精选居家方案.jpg",
+            "title": "精选居家方案",
 
             "text": "Forth forth moveth shall i unto midst tree, a fruit great subdue a every be so a fowl.",
             "button": "了解更多",
@@ -643,7 +643,7 @@
         },
         "02": {
             "href": "customization.html",
-            "image": "assets/images/blog/blog-2.png",
+            "image": "assets/images/0主页/0.2.2定制化服务.png",
             "title": "定制化服务",
 
             "text": "God year beast he beast waters that air, after deep to lights saw one.",
@@ -652,7 +652,7 @@
         },
         "03": {
             "href": "smart-home-control.html",
-            "image": "assets/images/blog/blog-3.png",
+            "image": "assets/images/0主页/0.2.3安装与部署.png",
             "title": "系统集成",
 
             "text": "Over fourth he. Whose beginning face third beast first divide saying forth one you.",

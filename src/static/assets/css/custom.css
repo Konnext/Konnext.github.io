@@ -9,9 +9,7 @@
     min-height: 60px;
 }
 .nav-lang {
-    margin-top: 20px;
-    margin-left: -25%;
-    margin-right: 25%;
+    margin-top: 30px;
 }
 
 .nav-lang .selectDiv {
@@ -22,11 +20,12 @@
 .nav-lang .selectDiv img {
     width: 22px;
 }
+
 li select {
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
-    background: url("/src/images/");
+    /* background: url("/src/images/img"); */
     border: none;
     line-height: 25px;
     min-width: 44px;

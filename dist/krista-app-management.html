@@ -22,7 +22,8 @@
         <!-- END: Styles -->
         <!-- jQuery -->
         <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
-        <script src="assets/js/email.js"></script>
+        <script defer src="assets/js/email.js"></script>
+        <script defer src="assets/js/language.js"></script>
     </head>
 </html>
 <body>
@@ -37,16 +38,6 @@
                 <span></span>
             </a>
             <ul class="nav navbar-nav">
-                <li class="nav-lang">
-                    <img width="30" src="assets/images/img/语言.png" alt="">
-                    <div class="selectDiv">
-                        <select class="select-lang" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-                            <option value=""></option>
-                            <option value="https://google.com">Google</option>
-                            <option value="https://yahoo.com">Yahoo</option>
-                        </select>
-                    </div>
-                </li>
                 <li class="nav-item">
                     <a href="aboutus.html" class="nav-link">
                         <span class="nav-link-name">关于我们</span>
@@ -208,6 +199,16 @@
                     <a href="contact_us.html" class="nav-link">
                         <span class="nav-link-name">联系我们</span>
                     </a>
+                </li>
+                <li class="nav-lang">
+                    <img width="30" src="assets/images/img/语言.png" alt="">
+                    <div class="selectDiv">
+                        <select id="selec" class="select-lang" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                            <option value=""></option>
+                            <option value="https://google.com">Google</option>
+                            <option value="https://yahoo.com">Yahoo</option>
+                        </select>
+                    </div>
                 </li>
             </ul>
             <!-- <ul class="nav nav-gap-sm navbar-nav nav-social align-items-center text-white">
@@ -483,13 +484,13 @@
                 <div class="col-12 col-lg-10 show-on-scroll" data-show-duration="500" data-show-distance="10" data-show-delay="50">
                     <div class="row justify-content-between">
                         <div class="row  gv-1 mb-60 justify-content-center">
-                            <img class=" mb-100 show-on-scroll" src="assets/images/krista.png" alt="" data-show-duration="800">
+                            <img width="80%" class=" mb-100 show-on-scroll" src="assets/images/2核心产品/2.2Krista.png" alt="" data-show-duration="800">
                         </div>
                         <div class="col-12 col-lg-10 col-xl-8">
                             <h2 class="h4 mb-12">Krista 应用程序搭载在RIC控制核心上，基于全屋IP网络的支持，实现对居所内所有家居系统的状态采集与远程控制。 </h2>
                         </div>
                         <div class="col-12 col-lg-10 col-xl-8">
-                            <h2 class="h4 mb-12">客户能通过它获取家中所有的实时监测信息。同时，也能够利用这些采集到的的数据，进行智能分析运算，并发送控制指令。 </h2>
+                            <h2 class="h4 mb-12">客户能通过它获取家中所有的实时监测信息。同时，也能够利用这些采集到的数据，进行智能分析运算，并发送控制指令。 </h2>
                         </div>
                         <div class="col-lg-auto d-none d-lg-block">
                             <hr class="mt-25 mb-0 width-70px">
@@ -501,7 +502,7 @@
                 <a href="ric-control-core.html" class="btn btn-clean"><svg class="icon-arrow icon-arrow-left" width='26' height='11' viewBox='0 0 26 11' fill='none' xmlns='http://www.w3.org/2000/svg'>
                         <path d='M5.5 1L1 5.5L5.5 10' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round' />
                         <path d='M19 5.5H1' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round' />
-                    </svg>上一篇：<span class="d-none d-sm-inline"> Krista App</span></a>
+                    </svg>上一篇：<span class="d-none d-sm-inline"> RIC 控制核心</span></a>
                 <a href="product.html" class="btn btn-clean">返回上级目录 </a>
                 <span>&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288</span>
             </div>
@@ -609,7 +610,7 @@
     </div>
 </div> -->
     </div>
-    <footer class="footer bg-dark text-white shape-parent overflow-hidden py-   0">
+    <footer class="footer bg-dark text-white shape-parent overflow-hidden py-60">
         <div class="shape align-items-end justify-content-end">
             <svg data-rellax-speed="-1" class="mb-n130" width="525" height="641" viewBox="0 0 525 641" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="320.5" cy="320.5" r="320.5" fill=" #003a44" />

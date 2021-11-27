@@ -22,7 +22,8 @@
         <!-- END: Styles -->
         <!-- jQuery -->
         <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
-        <script src="assets/js/email.js"></script>
+        <script defer src="assets/js/email.js"></script>
+        <script defer src="assets/js/language.js"></script>
     </head>
 </html>
 <body>
@@ -37,16 +38,6 @@
                 <span></span>
             </a>
             <ul class="nav navbar-nav">
-                <li class="nav-lang">
-                    <img width="30" src="assets/images/img/语言.png" alt="">
-                    <div class="selectDiv">
-                        <select class="select-lang" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-                            <option value=""></option>
-                            <option value="https://google.com">Google</option>
-                            <option value="https://yahoo.com">Yahoo</option>
-                        </select>
-                    </div>
-                </li>
                 <li class="nav-item">
                     <a href="aboutus.html" class="nav-link">
                         <span class="nav-link-name">关于我们</span>
@@ -208,6 +199,16 @@
                     <a href="contact_us.html" class="nav-link">
                         <span class="nav-link-name">联系我们</span>
                     </a>
+                </li>
+                <li class="nav-lang">
+                    <img width="30" src="assets/images/img/语言.png" alt="">
+                    <div class="selectDiv">
+                        <select id="selec" class="select-lang" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                            <option value=""></option>
+                            <option value="https://google.com">Google</option>
+                            <option value="https://yahoo.com">Yahoo</option>
+                        </select>
+                    </div>
                 </li>
             </ul>
             <!-- <ul class="nav nav-gap-sm navbar-nav nav-social align-items-center text-white">
@@ -571,10 +572,10 @@
                     <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filters="lifestyle">
                         <div class="card card-blog card-vertical">
                             <a href="featured-solution.html" class="card-img">
-                                <img src="assets/images/blog/blog-1.png" alt="" />
+                                <img src="assets/images/0主页/0.2.1精选居家方案.jpg" alt="" />
                             </a>
                             <div class="card-body">
-                                <a href="featured-solution.html" class="card-title h5">精选家居方案</a>
+                                <a href="featured-solution.html" class="card-title h5">精选居家方案</a>
                                 <div class="card-date"></div>
                                 <p class="card-text">Forth forth moveth shall i unto midst tree, a fruit great subdue a every be so a fowl.</p>
                                 <a href="featured-solution.html" class="btn btn-clean">了解更多<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -587,7 +588,7 @@
                     <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filters="design">
                         <div class="card card-blog card-vertical">
                             <a href="customization.html" class="card-img">
-                                <img src="assets/images/blog/blog-2.png" alt="" />
+                                <img src="assets/images/0主页/0.2.2定制化服务.png" alt="" />
                             </a>
                             <div class="card-body">
                                 <a href="customization.html" class="card-title h5">定制化服务</a>
@@ -603,7 +604,7 @@
                     <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filters="business">
                         <div class="card card-blog card-vertical">
                             <a href="smart-home-control.html" class="card-img">
-                                <img src="assets/images/blog/blog-3.png" alt="" />
+                                <img src="assets/images/0主页/0.2.3安装与部署.png" alt="" />
                             </a>
                             <div class="card-body">
                                 <a href="smart-home-control.html" class="card-title h5">系统集成</a>

@@ -22,7 +22,8 @@
         <!-- END: Styles -->
         <!-- jQuery -->
         <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
-        <script src="assets/js/email.js"></script>
+        <script defer src="assets/js/email.js"></script>
+        <script defer src="assets/js/language.js"></script>
     </head>
 </html>
 <body>
@@ -37,16 +38,6 @@
                 <span></span>
             </a>
             <ul class="nav navbar-nav">
-                <li class="nav-lang">
-                    <img width="30" src="assets/images/img/语言.png" alt="">
-                    <div class="selectDiv">
-                        <select class="select-lang" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-                            <option value=""></option>
-                            <option value="https://google.com">Google</option>
-                            <option value="https://yahoo.com">Yahoo</option>
-                        </select>
-                    </div>
-                </li>
                 <li class="nav-item">
                     <a href="aboutus.html" class="nav-link">
                         <span class="nav-link-name">关于我们</span>
@@ -208,6 +199,16 @@
                     <a href="contact_us.html" class="nav-link">
                         <span class="nav-link-name">联系我们</span>
                     </a>
+                </li>
+                <li class="nav-lang">
+                    <img width="30" src="assets/images/img/语言.png" alt="">
+                    <div class="selectDiv">
+                        <select id="selec" class="select-lang" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                            <option value=""></option>
+                            <option value="https://google.com">Google</option>
+                            <option value="https://yahoo.com">Yahoo</option>
+                        </select>
+                    </div>
                 </li>
             </ul>
             <!-- <ul class="nav nav-gap-sm navbar-nav nav-social align-items-center text-white">
@@ -670,7 +671,7 @@
     </div>
 </div> -->
     </div>
-    <footer class="footer bg-dark text-white shape-parent overflow-hidden py-   0">
+    <footer class="footer bg-dark text-white shape-parent overflow-hidden py-60">
         <div class="shape align-items-end justify-content-end">
             <svg data-rellax-speed="-1" class="mb-n130" width="525" height="641" viewBox="0 0 525 641" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="320.5" cy="320.5" r="320.5" fill=" #003a44" />

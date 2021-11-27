@@ -22,7 +22,8 @@
         <!-- END: Styles -->
         <!-- jQuery -->
         <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
-        <script src="assets/js/email.js"></script>
+        <script defer src="assets/js/email.js"></script>
+        <script defer src="assets/js/language.js"></script>
     </head>
 </html>
 <body>
@@ -37,16 +38,6 @@
                 <span></span>
             </a>
             <ul class="nav navbar-nav">
-                <li class="nav-lang">
-                    <img width="30" src="assets/images/img/语言.png" alt="">
-                    <div class="selectDiv">
-                        <select class="select-lang" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-                            <option value=""></option>
-                            <option value="https://google.com">Google</option>
-                            <option value="https://yahoo.com">Yahoo</option>
-                        </select>
-                    </div>
-                </li>
                 <li class="nav-item">
                     <a href="aboutus.html" class="nav-link">
                         <span class="nav-link-name">关于我们</span>
@@ -208,6 +199,16 @@
                     <a href="contact_us.html" class="nav-link">
                         <span class="nav-link-name">联系我们</span>
                     </a>
+                </li>
+                <li class="nav-lang">
+                    <img width="30" src="assets/images/img/语言.png" alt="">
+                    <div class="selectDiv">
+                        <select id="selec" class="select-lang" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                            <option value=""></option>
+                            <option value="https://google.com">Google</option>
+                            <option value="https://yahoo.com">Yahoo</option>
+                        </select>
+                    </div>
                 </li>
             </ul>
             <!-- <ul class="nav nav-gap-sm navbar-nav nav-social align-items-center text-white">
@@ -489,7 +490,7 @@
                         <h1 class="h3 mt-30 mb-60 show-on-scroll" data-show-duration="500" data-show-distance="10"> 防盗模式 </h1>
                     </div>
                     <div class="row justify-content-center">
-                        <img style="width: 100%" class="mb-60 show-on-scroll" src="assets/images/img/office3.jpg" alt="" data-show-duration="800" />
+                        <img style="width: 100%" class="mb-60 show-on-scroll" src="assets/images/3服务支持/3.2.3.1防盗模式.jpg" alt="" data-show-duration="800" />
                     </div>
                 </div>
                 <div class="col-12 col-lg-10 col-xl-8">
@@ -505,7 +506,7 @@
                         <h1 class="h3 mt-100 mb-60 show-on-scroll" data-show-duration="500" data-show-distance="10"> 警报模式 </h1>
                     </div>
                     <div class="row justify-content-center">
-                        <img style="width: 100%" class="mb-60 show-on-scroll" src="assets/images/img/1.3.1.1.3 电动窗帘控制.jpg" alt="" data-show-duration="800" />
+                        <img style="width: 100%" class="mb-60 show-on-scroll" src="assets/images/3服务支持/3.2.3.2警报模式.jpg" alt="" data-show-duration="800" />
                     </div>
                 </div>
                 <div class="col-12 col-lg-10 col-xl-8">
@@ -521,11 +522,27 @@
                         <h1 class="h3 mt-100 mb-60 show-on-scroll" data-show-duration="500" data-show-distance="10"> 节能模式 </h1>
                     </div>
                     <div class="row justify-content-center">
-                        <img style="width: 100%" class="mb-60 show-on-scroll" src="assets/images/img/1.3.1.1.3 电动窗帘控制.jpg" alt="" data-show-duration="800" />
+                        <img style="width: 100%" class="mb-60 show-on-scroll" src="assets/images/3服务支持/3.2.3.3节能模式.jpg" alt="" data-show-duration="800" />
                     </div>
                 </div>
                 <div class="col-12 col-lg-10 col-xl-8">
                     <h2 class="h4 mb-12"> 系统将根据太阳能实时发电量与家中用电量情况，以及当日时间来判断是否启动高功率用电设备（例如游泳池水泵换水），以此来最大程度降低能源消耗。 </h2>
+                </div>
+                <div class="col-lg-auto d-none d-lg-block">
+                    <hr class="mt-25 mb-0 width-70px" />
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-lg-8">
+                        <h1 class="h3 mt-100 mb-60 show-on-scroll" data-show-duration="500" data-show-distance="10"> 厨房安全 </h1>
+                    </div>
+                    <div class="row justify-content-center">
+                        <img style="width: 100%" class="mb-60 show-on-scroll" src="assets/images/3服务支持/3.2.3.4厨房安全.jpg" alt="" data-show-duration="800" />
+                    </div>
+                </div>
+                <div class="col-12 col-lg-10 col-xl-8">
+                    <h2 class="h4 mb-12"> 系统支持远程控制厨房区域供电和燃气阀门，也可按需在后厨安装监控，预防厨房安全隐患。 </h2>
                 </div>
                 <div class="col-lg-auto d-none d-lg-block">
                     <hr class="mt-25 mb-0 width-70px" />
@@ -547,7 +564,7 @@
                     </svg></a>
             </div>
         </div>
-        <footer class="footer bg-dark text-white shape-parent overflow-hidden py-   0">
+        <footer class="footer bg-dark text-white shape-parent overflow-hidden py-60">
             <div class="shape align-items-end justify-content-end">
                 <svg data-rellax-speed="-1" class="mb-n130" width="525" height="641" viewBox="0 0 525 641" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="320.5" cy="320.5" r="320.5" fill=" #003a44" />
