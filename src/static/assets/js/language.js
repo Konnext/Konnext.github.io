@@ -1,11 +1,6 @@
-// import {
-//     $,
-//     $doc,
-//     isInViewport,
-//     throttleScroll,
-// } from "../../../js/parts/_utility";
-// console.log($doc);
+const select = $("#selec");
+const html = $("html");
 
-// // let selectsssss = $doc.querySelector("#selec");
-// console.log(selectsssss);
+console.log(select);
+select.trigger();
 // console.log("=============");

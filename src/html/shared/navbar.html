@@ -124,16 +124,14 @@
            
                 {{ submenu_dropdown(navigation) }}
                 <li class="nav-lang">
-                    <img width="30" src="assets/images/img/语言.png" alt="">
-                    <div class="selectDiv">
-                        
-                    
-                    <select id="selec" class="select-lang" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-                    <option value=""></option>
-                    <option value="https://google.com">Google</option>
-                    <option value="https://yahoo.com">Yahoo</option>
-                  </select>
-                </div>
+                    <div class="dropdown">
+                        <img width="30" src="assets/images/img/语言.png" alt="">
+                        <div class="dropdown-content">
+                          <a href="https://google.com">简体中文</a>
+                          <a href="https://yahoo.com">繁體中文</a>
+                          <a href="#">English</a>
+                        </div>
+                      </div>
                 </li>
             </ul>
             {% endif %}
@@ -282,13 +280,25 @@
             <div class="col-12 col-md-4 col-lg-4 col-xl-3">
                 <div class="navbar-footer mt-60">
                     <div class="mb-60{{ ' text-white' if navbar_mobile_dark }}">
-                        <p class="lead mb-17 fw-medium">Contact info:</p>
+                        <p class="lead mb-17 fw-medium">联系方式:</p>
                         <ul class="list-group borderless font-size-17">
-                            <li class="list-group-item">Email: <a href="mailto:info@konnext.co.au" class="text-decoration-none{{ ' text-white' if navbar_mobile_dark }}">info@konnext.com.au</a></li>
-                            <li class="list-group-item">Phone: <a href="callto:+61 666-666-6666" class="text-decoration-none{{ ' text-white' if navbar_mobile_dark }}">+61-413-209-180</a></li>
+                            <li class="list-group-item">邮箱: <a href="mailto:info@konnext.co.au" class="text-decoration-none{{ ' text-white' if navbar_mobile_dark }}">info@konnext.com.au</a></li>
+                            <li class="list-group-item">电话: <a href="callto:+61 666-666-6666" class="text-decoration-none{{ ' text-white' if navbar_mobile_dark }}">+61-413-209-180</a></li>
                         </ul>
                     </div>
 
+                    
+                        <div class="text-white dropdown">
+                           
+                            <img width="30" src="assets/images/img/语言.png" alt="">
+                            &nbsp;&nbsp;Language
+                            <div style="left:35px;" class="dropdown-content">
+                              <a href="https://google.com">简体中文</a>
+                              <a href="https://yahoo.com">繁體中文</a>
+                              <a href="#">English</a>
+                            </div>
+                          </div>
+                   
              <!-- footer soc -->
 
                     <!-- <ul class="nav nav-gap-sm navbar-nav nav-social align-items-center mt-n10{{ ' text-white' if navbar_mobile_dark }}">

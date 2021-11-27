@@ -8,18 +8,6 @@
 .navbar-top {
     min-height: 60px;
 }
-.nav-lang {
-    margin-top: 30px;
-}
-
-.nav-lang .selectDiv {
-    max-width: 22px;
-    overflow: hidden;
-}
-
-.nav-lang .selectDiv img {
-    width: 22px;
-}
 
 li select {
     appearance: none;
@@ -42,3 +30,66 @@ li select {
 .cursor-none {
     pointer-events: none;
 }
+
+/* drop down menu========== */
+.nav-lang {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.nav-lang .selectDiv {
+    max-width: 22px;
+    overflow: hidden;
+}
+
+.nav-lang .selectDiv img {
+    width: 22px;
+}
+
+.dropbtn {
+    background-color: #04aa6d;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 48px;
+    left: -20px;
+    background-color: rgb(221, 39, 39);
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #f1f1f1bd;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+    background-color: rgb(200, 49, 49);
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(151, 65, 65);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/* drop down menu==end======== */
