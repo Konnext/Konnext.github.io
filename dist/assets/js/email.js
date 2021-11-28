@@ -1,22 +1,24 @@
-// import { SMTPClient } from "emailjs";
+const USER_ID = "user_OFchQQqFe3KtrdymPIGzv";
+const TEMPLATE_ID = "template_4968edk";
+const SERVICE_ID = "service_3jdq1cf";
 
-// const client = new SMTPClient({
-//     user: "user",
-//     password: "password",
-//     host: "smtp.your-email.com",
-//     ssl: true,
-// });
+emailjs.init("user_OFchQQqFe3KtrdymPIGzv");
 
-// //开始发送邮件
-// client.send(
-//     {
-//         text: "i hope this works",
-//         from: "you <username@your-email.com>",
-//         to: "someone <someone@your-email.com>, another <another@your-email.com>",
-//         cc: "else <else@your-email.com>",
-//         subject: "testing emailjs",
-//     },
-//     (err, message) => {
-//         console.log(err || message);
-//     }
-// );
+console.log(emailjs);
+const alert = $(".alertC");
+
+$("form").submit((e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
+        (result) => {
+            console.log(result.text);
+            alert.show();
+        },
+        (error) => {
+            console.log(error.text);
+        }
+    );
+
+    console.log("send email");
+});

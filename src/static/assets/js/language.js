@@ -1,6 +1,6 @@
-const select = $("#selec");
-const html = $("html");
+const alert = $(".alertC");
 
-console.log(select);
-select.trigger();
+alert.show();
+console.log(alert);
+
 // console.log("=============");
