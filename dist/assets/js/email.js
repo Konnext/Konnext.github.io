@@ -15,9 +15,13 @@ $("form").submit((e) => {
         (result) => {
             console.log(result.text);
             alertInfo.hide();
+            alertError.hide();
             alertSuccess.show();
         },
         (error) => {
+            console.log(error.text);
+            alertInfo.hide();
+            alertSuccess.hide();
             alertError.show();
         }
     );
