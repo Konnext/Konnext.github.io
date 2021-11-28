@@ -611,7 +611,7 @@
             "href": "about-us.html",
             "icon": "<svg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 18.5V11.5C1 8.71523 2.10625 6.04451 4.07538 4.07538C6.04451 2.10625 8.71523 1 11.5 1C14.2848 1 16.9555 2.10625 18.9246 4.07538C20.8938 6.04451 22 8.71523 22 11.5V18.5M22 19.6667C22 20.2855 21.7542 20.879 21.3166 21.3166C20.879 21.7542 20.2855 22 19.6667 22H18.5C17.8812 22 17.2877 21.7542 16.8501 21.3166C16.4125 20.879 16.1667 20.2855 16.1667 19.6667V16.1667C16.1667 15.5478 16.4125 14.9543 16.8501 14.5168C17.2877 14.0792 17.8812 13.8333 18.5 13.8333H22V19.6667ZM1 19.6667C1 20.2855 1.24583 20.879 1.68342 21.3166C2.121 21.7542 2.71449 22 3.33333 22H4.5C5.11884 22 5.71233 21.7542 6.14992 21.3166C6.5875 20.879 6.83333 20.2855 6.83333 19.6667V16.1667C6.83333 15.5478 6.5875 14.9543 6.14992 14.5168C5.71233 14.0792 5.11884 13.8333 4.5 13.8333H1V19.6667Z' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>",
             "title": "对于需求",
-            "text": "—— 我们从不说不。",
+            "text": "—— 我们量身定制。",
             "button": "read more",
             "button_icon": "<svg class='icon-arrow icon-arrow-right' width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 1L24 5L20 9' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/><path d='M7 5L24 5' stroke='currentColor' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/></svg>"
         },
