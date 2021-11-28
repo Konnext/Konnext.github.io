@@ -7,9 +7,12 @@ emailjs.init("user_OFchQQqFe3KtrdymPIGzv");
 const alertSuccess = $("#alertSuccess");
 const alertInfo = $("#alertInfo");
 const alertError = $("#alertError");
+const formC = $("form");
 
-$("form").submit((e) => {
+formC.submit((e) => {
     e.preventDefault();
+    alertError.hide();
+    alertSuccess.hide();
     alertInfo.show();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
         (result) => {
@@ -17,6 +20,7 @@ $("form").submit((e) => {
             alertInfo.hide();
             alertError.hide();
             alertSuccess.show();
+            formC.trigger("reset");
         },
         (error) => {
             console.log(error.text);
