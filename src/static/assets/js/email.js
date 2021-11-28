@@ -4,7 +4,6 @@ const SERVICE_ID = "service_3jdq1cf";
 
 emailjs.init("user_OFchQQqFe3KtrdymPIGzv");
 
-console.log(emailjs);
 const alertSuccess = $("#alertSuccess");
 const alertInfo = $("#alertInfo");
 const alertError = $("#alertError");
