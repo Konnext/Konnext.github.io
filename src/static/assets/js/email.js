@@ -5,18 +5,21 @@ const SERVICE_ID = "service_3jdq1cf";
 emailjs.init("user_OFchQQqFe3KtrdymPIGzv");
 
 console.log(emailjs);
-const alert = $(".alertC");
+const alertSuccess = $("#alertSuccess");
+const alertInfo = $("#alertInfo");
+const alertError = $("#alertError");
 
 $("form").submit((e) => {
     e.preventDefault();
-
+    alertInfo.show();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
         (result) => {
             console.log(result.text);
-            alert.show();
+            alertInfo.hide();
+            alertSuccess.show();
         },
         (error) => {
-            console.log(error.text);
+            alertError.show();
         }
     );
 

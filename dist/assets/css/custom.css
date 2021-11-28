@@ -22,12 +22,17 @@ li select {
     line-height: 25px;
     min-width: 44px;
 }
-
+#form {
+    margin-top: 20px;
+}
 @media (min-width: 620px) {
     .card-blog.card-horizontal.card-sm .card-img {
         width: 352px;
         height: 228px;
         margin-right: 40px;
+    }
+    #form {
+        margin-top: 0px;
     }
 }
 
@@ -104,6 +109,7 @@ li select {
 
 .alertC {
     display: none;
+    position: static;
 }
 
 .alertC .inner {

@@ -486,13 +486,6 @@
     <div class="content-wrap">
         <div class="py-50">
             <div class="container">
-                <div class="alertC success">
-                    <input type="checkbox" id="alert2" />
-                    <label class="close" title="close" for="alert2">
-                        <i class="icon-remove"></i>
-                    </label>
-                    <p class="inner">.</p>
-                </div>
                 <div class="row mb-n8">
                     <div class="col-12 col-lg-10 col-xl-8 show-on-scroll" data-show-distance="10" data-show-duration="600">
                         <h1 class="h2 mt-15 pb-4 pb-sm-0 mb-130">联系我们 👋</h1>
@@ -539,6 +532,27 @@
                                     <textarea name="message" class="form-control" rows="1" placeholder="咨询内容 *"></textarea>
                                 </div>
                                 <div class="col-12 show-on-scroll" data-show-duration="400" data-show-distance="10" data-show-delay="470">
+                                    <div id="alertSuccess" class="alertC success">
+                                        <input type="checkbox" id="alert2" />
+                                        <label class="close" title="close" for="alert2">
+                                            <i class="icon-remove"></i>
+                                        </label>
+                                        <p class="inner"> 来信已收到，我们将及时回复您！ </p>
+                                    </div>
+                                    <div id="alertInfo" class="alertC info">
+                                        <input type="checkbox" id="alert3" />
+                                        <label class="close" title="close" for="alert3">
+                                            <i class="icon-remove"></i>
+                                        </label>
+                                        <p class="inner">信息发送中，请稍后...</p>
+                                    </div>
+                                    <div id="alertError" class="alertC error">
+                                        <input type="checkbox" id="alert1" />
+                                        <label class="close" title="close" for="alert1">
+                                            <i class="icon-remove"></i>
+                                        </label>
+                                        <p class="inner">信息发送失败，请稍后再试。</p>
+                                    </div>
                                     <button class="btn btn-dark btn-with-ball mt-20" type="submit" name="button"> 提交 </button>
                                 </div>
                             </div>

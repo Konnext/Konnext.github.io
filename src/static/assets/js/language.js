@@ -1,6 +1,6 @@
-const alert = $(".alertC");
+// const alert = $(".alertC");
 
-alert.show();
-console.log(alert);
+// alert.show();
+// console.log(alert);
 
-// console.log("=============");
+// // console.log("=============");
