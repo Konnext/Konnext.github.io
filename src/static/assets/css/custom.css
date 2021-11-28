@@ -30,7 +30,9 @@ li select {
 .cursor-none {
     pointer-events: none;
 }
-
+.cursor-show {
+    pointer-events: all;
+}
 /* drop down menu========== */
 .nav-lang {
     margin-top: 15px;
