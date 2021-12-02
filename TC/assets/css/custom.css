@@ -1,0 +1,211 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+@import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css);
+
+.card-title {
+    font-size: 26px !important;
+}
+.feature-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+.navbar-top {
+    min-height: 60px;
+}
+
+li select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    /* background: url("/src/images/img"); */
+    border: none;
+    line-height: 25px;
+    min-width: 44px;
+}
+#form {
+    margin-top: 20px;
+}
+@media (min-width: 620px) {
+    .card-blog.card-horizontal.card-sm .card-img {
+        width: 352px;
+        height: 228px;
+        margin-right: 40px;
+    }
+    #form {
+        margin-top: 0px;
+    }
+}
+
+.cursor-none {
+    pointer-events: none;
+}
+.cursor-show {
+    pointer-events: all;
+}
+/* drop down menu========== */
+.nav-lang {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.nav-lang .selectDiv {
+    max-width: 22px;
+    overflow: hidden;
+}
+
+.nav-lang .selectDiv img {
+    width: 22px;
+}
+
+.dropbtn {
+    background-color: #04aa6d;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: -20px;
+    background-color: rgb(221, 39, 39);
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: -22323221;
+}
+
+.dropdown-content a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #f1f1f1bd;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+    background-color: rgb(14, 14, 14);
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(82, 82, 82);
+}
+
+.nav-lang:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/* drop down menu==end======== */
+
+/* ========alert ========*/
+
+.alertC {
+    display: none;
+    position: static;
+}
+
+.alertC .inner {
+    display: block;
+    padding: 6px;
+    margin: 6px;
+    border-radius: 3px;
+    border: 1px solid rgb(180, 180, 180);
+    background-color: rgb(212, 212, 212);
+}
+
+.alertC .close {
+    float: right;
+    margin: 3px 12px 0px 0px;
+    cursor: pointer;
+}
+
+.alertC .inner,
+.alertC .close {
+    color: rgb(88, 88, 88);
+}
+
+.alertC input {
+    display: none;
+}
+
+.alertC input:checked ~ * {
+    animation-name: dismiss, hide;
+    animation-duration: 300ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 0s, 100ms;
+}
+
+.alertC.error .inner {
+    border: 1px solid rgb(238, 211, 215);
+    background-color: rgb(242, 222, 222);
+}
+
+.alertC.error .inner,
+.alertC.error .close {
+    color: rgb(185, 74, 72);
+}
+
+.alertC.success .inner {
+    border: 1px solid rgb(214, 233, 198);
+    background-color: rgb(223, 240, 216);
+}
+
+.alertC.success .inner,
+.alertC.success .close {
+    color: rgb(70, 136, 71);
+}
+
+.alertC.info .inner {
+    border: 1px solid rgb(188, 232, 241);
+    background-color: rgb(217, 237, 247);
+}
+
+.alertC.info .inner,
+.alertC.info .close {
+    color: rgb(58, 135, 173);
+}
+
+.alertC.warning .inner {
+    border: 1px solid rgb(251, 238, 213);
+    background-color: rgb(252, 248, 227);
+}
+
+.alertC.warning .inner,
+.alertC.warning .close {
+    color: rgb(192, 152, 83);
+}
+
+@keyframes dismiss {
+    0% {
+        opacity: 1;
+    }
+    90%,
+    100% {
+        opacity: 0;
+        font-size: 0.1px;
+        transform: scale(0);
+    }
+}
+
+@keyframes hide {
+    100% {
+        height: 0px;
+        width: 0px;
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+    }
+}
+
+/* ========alertC ========*/
